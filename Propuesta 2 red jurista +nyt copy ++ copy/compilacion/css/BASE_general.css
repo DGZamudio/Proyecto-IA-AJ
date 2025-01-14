@@ -28,12 +28,15 @@ html {
     --colorTextoFuente1:var(--color--gray3);
     --colorTextoFuente2:var(--color--black1);
     --colorTextoFuente3:var(--color--gray1);
+    --colorTextoFuente4:var(--color--white3);
     --colorSombraModulos:var(--color--blue5);
+    --colorSombraBuscador:var(--color--white1);
     --colorBackgroundBody:var(--color--blue1);
     --colorBackgroundBoton:var(--color--green);
     --colorBackgroundBoton2:var(--color--white1);
     --colorBackgroundModulos:var(--color--blue2);
     --colorBackgroundHeader:var(--color--black2);
+    --colorBackgroundBusqueda:var(--color--white2);
     --colorTextoResaltado:var(--color--white1);
     --colorSeparadores:var(--color--blue3);
 }

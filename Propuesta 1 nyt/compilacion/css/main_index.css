@@ -14,10 +14,6 @@
     font-size: large;
 }
 
-.modulo-importante p{
-    text-align: justify;
-}
-
 .modulo-importante a:link{
     color:var(--colorTextoFuente2);
     text-decoration: none;
@@ -56,7 +52,6 @@
 }
 
 .modulo {
-    text-align: justify;
     transition: all 450ms;
 }
 

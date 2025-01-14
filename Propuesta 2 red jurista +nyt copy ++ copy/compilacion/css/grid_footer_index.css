@@ -1,0 +1,50 @@
+.grid-footer-contenido {
+    display: grid;
+    grid-template-columns: 1fr 14fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "espacio-izq contenedor-footer espacio-der";
+}
+
+.espacio-izq {
+    grid-area: espacio-izq;
+}
+
+.espacio-der {
+    grid-area: espacio-der;
+}
+
+.contenedor-footer {
+    grid-area: contenedor-footer;
+}
+
+
+
+.grid-contenedor-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "logo-footer ."
+        "navegacion-footer navegacion-footer"
+        "copyright-footer copyright-footer";
+}
+
+.logo-footer {
+    grid-area: logo-footer;
+}
+
+.navegacion-footer {
+    grid-area: navegacion-footer;
+}
+
+.copyright-footer {
+    grid-area: copyright-footer;
+}
+
+
+.grid-navegacion-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 20px;
+}

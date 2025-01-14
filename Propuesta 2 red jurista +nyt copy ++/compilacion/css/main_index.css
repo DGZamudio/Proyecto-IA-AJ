@@ -14,7 +14,6 @@ body {
     border-bottom: .5px var(--colorSeparadores) solid;
     padding-left: 25px;
     padding-right: 25px;
-    margin-top: 5px;
     margin-bottom: 5px;
     font-size:large;
 }
@@ -82,6 +81,7 @@ body {
 }
 
 .modulo p{
+    color: var(--colorTextoFuente4);
     font-size: 0.8rem;
 }
 
@@ -98,10 +98,15 @@ body {
 }
 
 .modulo:hover {
+    color: var(--colorTextoFuente);
     padding: 6px;
     border-radius: 15px;
-    background-color: var(--colorBackgroundModulos);
+    background-image: linear-gradient(45deg,var(--colorBackgroundModulos),black);
     box-shadow: 1px 2px 20px 0px var(--colorSombraModulos);
+}
+
+.modulo:hover p{
+    color: var(--colorTextoResaltado);
 }
 
 p {
