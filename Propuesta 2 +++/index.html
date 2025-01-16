@@ -14,6 +14,14 @@
 </head>
 <body>
     <div class="contenido">
+        <div class="buscador-ia-header">
+            <div class="contenedor-buscador-ia-header">
+                <textarea id="chatInput" placeholder="Consulta con JuRIA..."></textarea>
+                <a href="">
+                    <img src="./compilacion/images/send.png" alt="">
+                </a>
+            </div>
+        </div>
         <header>
             <div class="header-contenido">
                 <div class="grid-header-contenido">
@@ -22,7 +30,7 @@
                     <div class="titulo-header">
                         <img src="./compilacion/images/logo_RedJurista.svg" alt="">
                     </div>
-                    <div class="contenido-header-navegacion">
+                    <div id="contenido-header-navegacion">
                         <a href=""><h5>Tema 1</h5></a>
                         <a href=""><h5>Tema 2</h5></a>
                         <a href=""><h5>Tema 3</h5></a>
@@ -42,22 +50,40 @@
                             </a>
                         </div>
                     </div>
-                    <div class="buscador-ia-header">
-                        <input type="text" placeholder="Consulta con JuRIA...">
-                    </div>
-                </div>
-                <div>
-                    <div class="calendario-header">
+                    <div id="calendario-header">
                         <h6>
                             Fecha publicacion:
                         </h6>
-                        <input type="date" value="2024-01-14">
+                        <input type="date" value="2024-01-14" max="2024-01-15">
                     </div>
                 </div>
             </div>
         </header>
         <main>
             <div class="body-contenido">
+                <div class="pop-up-noticia" id="pop-up">
+                    <div class="grid-pop-up-noticia">
+                        <div class="boton-regresar-pop-up">
+                            <a onclick="desplegarNoticia()">
+                                <img src="./compilacion/images/back-arrow-svgrepo-com.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="titulo-pop-up">
+                            <h2>Titulo de la noticia</h2>
+                        </div>
+                        <div class="logo-pop-up">
+                            <img src="./compilacion/images/logo_RedJurista.svg" alt="">
+                        </div>
+                        <div class="tema-pop-up">
+                            <h5>Tema principal noticia</h5>
+                        </div>
+                        <div class="resumen-pop-up">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quisquam hic, consequuntur expedita, neque fuga cum et, tenetur exercitationem alias voluptas repellendus. Libero, voluptatibus nisi beatae reprehenderit expedita et facilis!
+                            </p>
+                        </div>
+                    </div>
+                </div>
                 <div class="grid-body-contenido">
                     <div class="espacio-izq"></div>
                     <div class="espacio-der"></div>
@@ -66,7 +92,7 @@
                             <div class="grid-noticias-principales">
                                 <div class="modulo1">
                                     <div class="modulo-importante">
-                                        <a href="">
+                                        <a onclick="desplegarNoticia()">
                                             <span>
                                                <!-- <img src="./compilacion/images/gold-medal-svgrepo-com.svg" alt="">-->
                                                 <h2>
@@ -78,13 +104,13 @@
                                             </p>
                                         </a>
                                         <div class="boton-ver-mas">
-                                            <a href=""><img src="./compilacion/images/plus-svgrepo-com.svg" alt=""><p>Ver mas</p></a>
+                                            <a onclick="desplegarNoticia()"><img src="./compilacion/images/plus-svgrepo-com.svg" alt=""><p>Ver mas</p></a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="modulo2">
                                     <div class="modulo-importante">
-                                        <a href="">
+                                        <a onclick="desplegarNoticia()">
                                             <span>
                                                 <!--<img src="./compilacion/images/silver-medal-svgrepo-com.svg" alt="">-->
                                                 <h3>
@@ -96,13 +122,13 @@
                                             </p>
                                         </a>
                                         <div class="boton-ver-mas">
-                                            <a href=""><img src="./compilacion/images/plus-svgrepo-com.svg" alt=""><p>Ver mas</p></a>
+                                            <a onclick="desplegarNoticia()"><img src="./compilacion/images/plus-svgrepo-com.svg" alt=""><p>Ver mas</p></a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="modulo3">
                                     <div class="modulo-importante">
-                                        <a href="">
+                                        <a onclick="desplegarNoticia()">
                                             <span>
                                             <!--<img src="./compilacion/images/bronze-medal-svgrepo-com.svg" alt="">-->
                                                 <h4>
@@ -114,13 +140,13 @@
                                             </p>
                                         </a>
                                         <div class="boton-ver-mas">
-                                            <a href=""><img src="./compilacion/images/plus-svgrepo-com.svg" alt=""><p>Ver mas</p></a>
+                                            <a onclick="desplegarNoticia()"><img src="./compilacion/images/plus-svgrepo-com.svg" alt=""><p>Ver mas</p></a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="modulo4">
                                     <div class="modulo-importante">
-                                        <a href="">
+                                        <a onclick="desplegarNoticia()">
                                             <span>
                                                 <!--<img src="./compilacion/images/fire-svgrepo-com.svg" alt="">-->
                                                 <h5>
@@ -132,13 +158,13 @@
                                             </p>
                                         </a>
                                         <div class="boton-ver-mas">
-                                            <a href=""><img src="./compilacion/images/plus-svgrepo-com.svg" alt=""><p>Ver mas</p></a>
+                                            <a onclick="desplegarNoticia()"><img src="./compilacion/images/plus-svgrepo-com.svg" alt=""><p>Ver mas</p></a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="modulo5">
                                     <div class="modulo-importante">
-                                        <a href="">
+                                        <a onclick="desplegarNoticia()">
                                             <span>
                                                 <!--<img src="./compilacion/images/fire-svgrepo-com.svg" alt="">-->
                                                 <h5>
@@ -150,7 +176,7 @@
                                             </p>
                                         </a>
                                         <div class="boton-ver-mas">
-                                            <a href=""><img src="./compilacion/images/plus-svgrepo-com.svg" alt=""><p>Ver mas</p></a>
+                                            <a onclick="desplegarNoticia()"><img src="./compilacion/images/plus-svgrepo-com.svg" alt=""><p>Ver mas</p></a>
                                         </div>
                                     </div>
                                 </div>
@@ -158,7 +184,7 @@
                         </div>
                         <div class="noticias-secundarias">
                             <div class="grid-noticias-secundarias">
-                                <a href="" class="modulo">
+                                <a onclick="desplegarNoticia()" class="modulo">
                                     <h4>
                                         Noticia
                                     </h4>
@@ -166,7 +192,7 @@
                                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima voluptate quia maiores quidem consectetur dignissimos officiis corporis voluptatum ad modi quod sapiente vel
                                     </p>
                                 </a>
-                                <a href="" class="modulo">
+                                <a onclick="desplegarNoticia()" class="modulo">
                                     <h4>
                                         Noticia
                                     </h4>
@@ -174,7 +200,7 @@
                                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima voluptate quia maiores quidem consectetur dignissimos officiis corporis voluptatum ad modi quod sapiente vel
                                     </p>
                                 </a>
-                                <a href="" class="modulo">
+                                <a onclick="desplegarNoticia()" class="modulo">
                                     <h4>
                                         Noticia
                                     </h4>
@@ -182,7 +208,7 @@
                                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima voluptate quia maiores quidem consectetur dignissimos officiis corporis voluptatum ad modi quod sapiente vel
                                     </p>
                                 </a>
-                                <a href="" class="modulo">
+                                <a onclick="desplegarNoticia()" class="modulo">
                                     <h4>
                                         Noticia
                                     </h4>
@@ -190,7 +216,7 @@
                                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima voluptate quia maiores quidem consectetur dignissimos officiis corporis voluptatum ad modi quod sapiente vel
                                     </p>
                                 </a>
-                                <a href="" class="modulo">
+                                <a onclick="desplegarNoticia()" class="modulo">
                                     <h4>
                                         Noticia
                                     </h4>
@@ -198,7 +224,7 @@
                                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima voluptate quia maiores quidem consectetur dignissimos officiis corporis voluptatum ad modi quod sapiente vel
                                     </p>
                                 </a>
-                                <a href="" class="modulo">
+                                <a onclick="desplegarNoticia()" class="modulo">
                                     <h4>
                                         Noticia
                                     </h4>
@@ -206,7 +232,7 @@
                                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima voluptate quia maiores quidem consectetur dignissimos officiis corporis voluptatum ad modi quod sapiente vel
                                     </p>
                                 </a>
-                                <a href="" class="modulo">
+                                <a onclick="desplegarNoticia()" class="modulo">
                                     <h4>
                                         Noticia
                                     </h4>
@@ -214,7 +240,7 @@
                                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima voluptate quia maiores quidem consectetur dignissimos officiis corporis voluptatum ad modi quod sapiente vel
                                     </p>
                                 </a>
-                                <a href="" class="modulo">
+                                <a onclick="desplegarNoticia()" class="modulo">
                                     <h4>
                                         Noticia
                                     </h4>
@@ -273,5 +299,7 @@
             </div>
         </footer>
     </div>
+    <script type="text/javascript" src="./compilacion/js/sticky.js"></script>
+    <script type="text/javascript" src="./compilacion/js/popup_noticia.js"></script>
 </body>
 </html>

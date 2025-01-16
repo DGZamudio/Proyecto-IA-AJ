@@ -51,6 +51,33 @@
     row-gap: 15px;
 }
 
+
+.grid-pop-up-noticia {
+    display: grid;
+    row-gap: 15px;
+}
+
+.boton-regresar-pop-up {
+    grid-area: boton-regresar-pop-up;
+}
+
+.titulo-pop-up {
+    grid-area: titulo-pop-up;
+}
+
+.logo-pop-up {
+    grid-area: logo-pop-up;
+    justify-self: end;
+}
+
+.tema-pop-up {
+    grid-area: tema-pop-up;
+}
+
+.resumen-pop-up {
+    grid-area: resumen-pop-up;
+}
+
 @media screen and (min-width:600px) {
     .grid-noticias-secundarias {
         grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -65,11 +92,22 @@
             "modulo2 modulo3 modulo3 modulo5"
             "modulo2 modulo4 modulo4 modulo5";
     }
+    .grid-pop-up-noticia {
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "boton-regresar-pop-up ."
+            "titulo-pop-up logo-pop-up"
+            "tema-pop-up ."
+            "resumen-pop-up resumen-pop-up";
+    }
 }
 
 @media screen and (max-width:600px) {
     .grid-noticias-secundarias {
         grid-template-columns: 1fr 1fr ;
+    }
+    .grid-pop-up-noticia {
     }
 }
 
@@ -83,5 +121,8 @@
             "modulo2 modulo3"
             "modulo4 modulo4"
             "modulo5 modulo5";
+    }
+    .grid-pop-up-noticia {
+        display: grid;
     }
 }

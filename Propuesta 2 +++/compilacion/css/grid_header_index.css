@@ -18,12 +18,17 @@
     grid-area: titulo-header;
 }
 
-.contenido-header-navegacion {
+#contenido-header-navegacion {
     grid-area: contenido-header-navegacion;
 }
 
 .buscador-ia-header {
     grid-area:buscador-ia-header;
+}
+
+#calendario-header {
+    grid-area: calendario-header;
+    justify-content: center;
 }
 
 @media screen and (min-width:1100px) {
@@ -32,6 +37,7 @@
         grid-template-rows: auto;
         grid-template-areas: 
             "espacio-izq titulo-header contenido-header-navegacion botones-sesion-header espacio-der"
+            "espacio-izq calendario-header calendario-header calendario-header espacio-der"
             "espacio-izq buscador-ia-header buscador-ia-header buscador-ia-header espacio-der"
     }
 }
@@ -43,6 +49,7 @@
         grid-template-areas: 
             "espacio-izq titulo-header botones-sesion-header espacio-der"
             "espacio-izq contenido-header-navegacion contenido-header-navegacion espacio-der"
+            "espacio-izq calendario-header calendario-header espacio-der"
             "espacio-izq buscador-ia-header buscador-ia-header espacio-der";
     }
 }
@@ -54,15 +61,16 @@
                 "espacio-izq titulo-header espacio-der"
                 "espacio-izq botones-sesion-header espacio-der"
                 "espacio-izq contenido-header-navegacion espacio-der"
+                "espacio-izq calendario-header espacio-der"
                 "espacio-izq buscador-ia-header espacio-der";
         }
         .titulo-header {
             justify-self: center;
         }
-        .contenido-header-navegacion a{
+        #contenido-header-navegacion a{
             font-size:.8em;
         }
-        .contenido-header-navegacion a:hover{
+        #contenido-header-navegacion a:hover{
             font-size:1em;
         }
 }

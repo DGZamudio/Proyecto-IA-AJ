@@ -14,6 +14,7 @@ html {
     --color--white2:#f1f1f1;
     --color--white3:#b4acac;
     --color--white4:#d3cccc;
+    --color--white5:#ffffffa4;
     --color--blue1:#0b1526;
     --color--blue2:#1b2c4c;
     --color--blue3:#144d6465;
@@ -31,6 +32,7 @@ html {
     --colorTextoFuente4:var(--color--white3);
     --colorSombraModulos:var(--color--blue5);
     --colorSombraBuscador:var(--color--white1);
+    --colorSombraMasNoticias:var(--color--white5);
     --colorBackgroundBody:var(--color--blue1);
     --colorBackgroundBoton:var(--color--green);
     --colorBackgroundBoton2:var(--color--white1);
