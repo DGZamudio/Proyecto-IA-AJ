@@ -85,6 +85,10 @@
     grid-area: mas-informacion-pop-up;
 }
 
+.grid-contenedor-titulo-modulo-importante {
+    display: grid;
+}
+
 @media screen and (min-width:600px) {
     .grid-noticias-secundarias {
         grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -113,6 +117,12 @@
     }
     .logo-pop-up {
         justify-self: end;
+    }
+    .grid-contenedor-titulo-modulo-importante {
+        grid-template-columns: 14fr 1fr;
+    }
+    .icono-titulo-modulo-importante {
+        align-self: center;
     }
 }
 

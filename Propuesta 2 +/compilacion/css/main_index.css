@@ -1,5 +1,6 @@
 body {
     background-image: linear-gradient(var(--colorBackgroundBody) 55%, #000);
+    scrollbar-width: thin;
 }
 
 .contenedor-noticias {
@@ -9,10 +10,19 @@ body {
     padding: 0px 0px 5px 0px;
 }
 
-.contenedor-noticias h1{
+.contenedor-noticias-titulo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     border-bottom: 2px var(--colorSeparadores) solid;
     padding-bottom: 0px;
     color: var(--colorTextoTitulos3);
+}
+
+.contenedor-noticias-titulo img{
+    margin-left: 15px;
+    width: 2rem;
+    height: 2rem;
 }
 
 .apartado-mas-noticias {
@@ -55,6 +65,11 @@ body {
     border-right: .5px var(--colorSeparadores) solid;
 }
 
+.icono-titulo-modulo-importante img{
+    width: 3rem;
+    height: auto;
+}
+
 .modulo-importante {
     height: 100%;
     border-bottom: .5px var(--colorSeparadores) solid;
@@ -79,7 +94,7 @@ body {
 }
 
 .modulo-importante a img{
-    width: 1rem;
+    width: 2rem;
     height: auto;
 }
 
@@ -92,6 +107,13 @@ body {
 .modulo-importante a span h6{
     margin-top: 5px;
     margin-bottom: 5px;
+}
+
+.boton-regresar-pop-up {
+    position: fixed;
+    border-radius: 1rem;
+    background-color: var(--colorBackgroundModulos);
+    border: 3px var(--colorSeparadores) solid;
 }
 
 .boton-ver-mas{
@@ -173,6 +195,7 @@ body {
 }
 
 .pop-up-noticia {
+    scrollbar-color: white transparent;
     z-index: 22;
     display: none;
     position: fixed;
@@ -184,6 +207,7 @@ body {
     margin: 50px;
     border-radius: 50px;
     border: 2px var(--colorSombraModulos) solid;
+    overflow-y:auto;
 }
 
 .pop-up-noticia h2{
@@ -214,6 +238,26 @@ body {
     border: none;
     border-radius: 5px;
     padding: 15px;
+    cursor: pointer;
+}
+
+.ver-mas-noticias {
+    display: none;
+    margin: 35px 0px 35px 0px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ver-mas-noticias h4{
+    color: var(--colorTextoFuente4);
+}
+
+.ver-mas-noticias button{
+    border: none;
+    padding: 10px 15px 10px 15px;
+    border-radius: 25px;
+    background-color: var(--colorBackgroundBoton2);
+    color: var(--colorTextoFuente2);
     cursor: pointer;
 }
 
