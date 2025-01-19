@@ -33,7 +33,7 @@
 
 @media screen and (min-width:1100px) {
     .grid-header-contenido {
-        grid-template-columns: 2fr 4fr 10fr 3fr 2fr;
+        grid-template-columns: 1fr 5fr 11fr 4fr 1fr;
         grid-template-rows: auto;
         grid-template-areas: 
             "espacio-izq titulo-header . botones-sesion-header espacio-der"
@@ -45,7 +45,7 @@
 
 @media screen and (max-width:1100px) {
     .grid-header-contenido {
-        grid-template-columns: 2fr 4fr 3fr 2fr;
+        grid-template-columns: 1fr 5fr 4fr 1fr;
         grid-template-rows: auto;
         grid-template-areas: 
             "espacio-izq titulo-header botones-sesion-header espacio-der"
@@ -54,7 +54,7 @@
             "espacio-izq buscador-ia-header buscador-ia-header espacio-der";
     }
 }
-    @media screen and (max-width:435px) {
+    @media screen and (max-width:490px) {
         .grid-header-contenido {
             grid-template-columns: 1fr 14fr 1fr;
             grid-template-rows: auto;

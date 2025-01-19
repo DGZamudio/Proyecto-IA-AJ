@@ -2,12 +2,6 @@ header {
     position: sticky;
 }
 
-.header-contenido {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .titulo-header {
     display: flex;
     justify-content: center;
@@ -31,14 +25,10 @@ header {
   }
 
 #contenido-header-navegacion {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    display: block;
     margin-top: 15px;
     margin-bottom: 15px;
     color:var(--colorTextoTitulos2);
-    border-bottom: 3px var(--colorTextoFuente) solid;
-    border-radius: 4px;
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -48,12 +38,45 @@ header {
     border: none;
     background-color: transparent;
     transition: all 200ms;
-    font-size: 1.5em;
+    font-size: 1.5rem;
 }
 
 #contenido-header-navegacion button:hover{
-    font-size:1.7em;
+    font-size:1.6rem;
     color: var(--colorTextoResaltado);
+}
+
+.contenedor-navegacion {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-bottom: 1px var(--colorTextoFuente) solid;
+    border-radius: 4px;
+}
+
+.contenedor-header-dropdown {
+    position: relative;
+    width: 100%;
+}
+
+.contenedor-dropdown {
+    padding: 25px;
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-height: 120px;
+    max-height: 450px;
+    background-color: var(--colorBackgroundBody);
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.seccion {
+    margin-bottom: 20px;
+    flex-grow: 1;
 }
 
 .botones-sesion-header {
