@@ -2,6 +2,10 @@ header {
     position: sticky;
 }
 
+.contenedor-noticias-titulo {
+    padding: 15px;
+}
+
 .titulo-header {
     display: flex;
     justify-content: center;
@@ -80,6 +84,7 @@ header {
 }
 
 .seccion a {
+    text-decoration: none;
     margin-left: 5px;
     margin-bottom: 0.2rem;
 }

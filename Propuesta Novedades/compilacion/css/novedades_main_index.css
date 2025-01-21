@@ -183,6 +183,10 @@ option {
     color:var(--colorTextoTitulos3);
 }
 
+.modulo h3 {
+    color: var(--colorTextoResaltado);
+}
+
 .modulo:link{
     text-decoration: none;
 }
