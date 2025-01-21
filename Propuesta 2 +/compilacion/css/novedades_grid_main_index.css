@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: 1fr 14fr 1fr;
     grid-template-areas: 
-        "espacio-izq contenedor-noticias-main espacio-der";
+        "left-contenedor-noticias-main contenedor-noticias-main right-contenedor-noticias-main";
     margin-top: 25px;
 }
 
@@ -10,11 +10,11 @@
   grid-area: contenedor-noticias-main;  
 }
 
-.espacio-izq {
-    grid-area: espacio-izq;
+.left-contenedor-noticias-main {
+    grid-area: left-contenedor-noticias-main;
 }
-.espacio-der {
-    grid-area: espacio-der;
+.right-contenedor-noticias-main {
+    grid-area: right-contenedor-noticias-main;
 }
 
 .contenedor-noticias {

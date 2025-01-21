@@ -3,15 +3,15 @@
     grid-template-columns: 1fr 14fr 1fr;
     grid-template-rows: auto;
     grid-template-areas: 
-        "espacio-izq contenedor-footer espacio-der";
+        "left-contenedor-footer contenedor-footer right-contenedor-footer";
 }
 
-.espacio-izq {
-    grid-area: espacio-izq;
+.left-contenedor-footer {
+    grid-area: left-contenedor-footer;
 }
 
-.espacio-der {
-    grid-area: espacio-der;
+.right-contenedor-footer {
+    grid-area: right-contenedor-footer;
 }
 
 .contenedor-footer {
