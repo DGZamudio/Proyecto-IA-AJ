@@ -1,6 +1,5 @@
 .grid-body-contenido {
     display: grid;
-    grid-template-columns: 3fr 15fr 3fr;
     grid-template-areas: 
         "left-contenedor-noticias-main contenedor-noticias-main right-contenedor-noticias-main";
     margin-top: 25px;
@@ -89,18 +88,25 @@
     display: grid;
 }
 
-@media screen and (min-width:600px) {
-    .grid-noticias-secundarias {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows:  1fr 1fr;
+@media screen and (min-width:1200px) {
+    .grid-contenedor-body {
+        grid-template-columns: 1fr 1200px 1fr;
     }
-    .grid-noticias-principales {
+    .grid-contenedor-encabezado {
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows:  1fr 1fr 1fr ;
+        grid-template-rows: 1fr;
         grid-template-areas: 
-            "modulo2 modulo1 modulo1 modulo5"
-            "modulo2 modulo1 modulo1 modulo5"
-            "modulo2 modulo3 modulo4 modulo5";
+            "left-novedades-laterales novedad-principal novedad-principal right-novedades-laterales";
+    }
+    .grid-contenedor-tarjetas-noticia {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        row-gap: 20px;
+        column-gap: 15px;
+    }
+    .grid-contenedor-tarjetas {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
     .grid-pop-up-noticia {
         grid-template-columns: auto auto;
@@ -125,9 +131,26 @@
     }
 }
 
-@media screen and (max-width:600px) {
-    .grid-noticias-secundarias {
+@media screen and (max-width:1200px) {
+    .grid-contenedor-body {
+        grid-template-columns: 1fr 15fr 1fr;
+    }
+    .grid-contenedor-encabezado {
         grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+            "novedad-principal right-novedades-laterales"
+            "novedad-principal left-novedades-laterales";
+    }
+    .grid-contenedor-tarjetas-noticia {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        row-gap: 20px;
+        column-gap: 15px;
+    }
+    .grid-contenedor-tarjetas {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
     .grid-pop-up-noticia {
         grid-template-columns: auto auto;
@@ -146,16 +169,29 @@
     }
 }
 
-@media screen and (max-width:600px) {
-    .grid-noticias-principales {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows:  auto;
+@media screen and (max-width:700px) {
+    .grid-contenedor-body {
+        display: grid;
+        grid-template-columns: 1fr 20fr 1fr;
         grid-template-areas: 
-            "modulo1 modulo1"
-            "modulo2 modulo3"
-            "modulo2 modulo3"
-            "modulo4 modulo4"
-            "modulo5 modulo5";
+            "left-contenedor-secciones contenedor-secciones right-contenedor-secciones";
+    }
+    .grid-contenedor-encabezado {
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr;
+    }
+    .left-novedades-laterales,.right-novedades-laterales{
+        display: none;
+    }
+    .grid-contenedor-tarjetas {
+        grid-template-columns: 1fr 1fr;
+    }
+    .grid-contenedor-tarjetas-noticia {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        row-gap: 20px;
+        column-gap: 15px;
     }
     .grid-pop-up-noticia {
         grid-template-columns: auto;
@@ -178,7 +214,6 @@
 
 .grid-contenedor-body {
     display: grid;
-    grid-template-columns: 3fr 15fr 3fr;
     grid-template-areas: 
         "left-contenedor-secciones contenedor-secciones right-contenedor-secciones";
 }
@@ -195,22 +230,8 @@
     grid-area: contenedor-secciones;
 }
 
-@media screen and (max-width:600px) {
-    .grid-contenedor-body {
-        display: grid;
-        grid-template-columns: 3fr 15fr 3fr;
-        grid-template-areas: 
-            "left-contenedor-secciones contenedor-secciones right-contenedor-secciones";
-    }
-}
-
-
 .grid-contenedor-encabezado {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: 
-        "left-novedades-laterales novedad-principal novedad-principal right-novedades-laterales";
 }
 
 .novedad-principal {
@@ -238,10 +259,6 @@
 
 .grid-contenedor-tarjetas-noticia {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    row-gap: 20px;
-    column-gap: 15px;
 }
 
 
@@ -265,9 +282,6 @@
     grid-area: titulo-novedad-estrecha;
 }
 
-
-
 .grid-contenedor-tarjetas {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
 }

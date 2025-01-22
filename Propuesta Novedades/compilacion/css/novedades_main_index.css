@@ -8,6 +8,11 @@ body {
     border-bottom: 2px var(--colorSeparadores) solid;
 }
 
+.tema {
+    display: flex;
+    align-items: center;
+}
+
 .tema-salud {
     color: rgb(245, 94, 94);
 }
@@ -46,9 +51,7 @@ body {
 
 .novedad-principal {
     cursor: pointer;
-    border-bottom: 2px var(--colorSeparadores) solid;
-    border-right: 2px var(--colorSeparadores) solid;
-    border-left: 2px var(--colorSeparadores) solid;
+    border: 2px var(--colorSeparadores) solid;
     padding: 15px;
 }
 
@@ -90,6 +93,15 @@ body {
     border: none;
 }
 
+.left-novedades-laterales {
+    border-top: 2px var(--colorSeparadores) solid;
+    border-bottom: 2px var(--colorSeparadores) solid;
+}
+
+.right-novedades-laterales {
+    border-top: 2px var(--colorSeparadores) solid;
+    border-bottom: 2px var(--colorSeparadores) solid;
+}
 .contenedor-noticias {
     border-top: 2px var(--colorSeparadores) solid;
     border-bottom: 2px var(--colorSeparadores) solid;
@@ -144,7 +156,7 @@ select {
 }
 
 option {
-    background: transparent;
+    background: black;
 } 
 
 .contenedor-noticias-titulo {
