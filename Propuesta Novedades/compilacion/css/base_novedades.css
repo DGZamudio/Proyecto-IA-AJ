@@ -1,7 +1,7 @@
 * {
     margin: 0px;
     padding: 0px;
-    font-family: "Mukta", sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 html {
@@ -42,7 +42,7 @@ html {
     --colorBackgroundModulos:var(--color--blue2);
     --colorBackgroundHeader:var(--color--black2);
     --colorBackgroundBusqueda:var(--color--white2);
-    --colorTextoResaltado:var(--color--white1);
+    --colorTextoResaltado:var(--color--white2);
     --colorSeparadores:var(--color--blue3);
     --colorSeparadores2:var(--color--blue7);
 }

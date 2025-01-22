@@ -28,6 +28,12 @@ header {
     background-color: var(--colorBackgroundBody);
   }
 
+  .sticky-logo {
+    position: fixed;
+    top: 0;
+    background-color: var(--colorBackgroundBody);
+  }
+
 #contenido-header-navegacion {
     display: block;
     margin-top: 15px;

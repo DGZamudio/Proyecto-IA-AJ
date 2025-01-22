@@ -1,0 +1,58 @@
+.novedad-principal {
+    border: 2px var(--colorSeparadores) solid;
+    padding: 15px;
+}
+
+.tarjeta-noticia {
+    border-right: 1px var(--colorSeparadores) solid;
+    border-bottom:  1px var(--colorSeparadores) solid;
+}
+
+.titulo-novedades-mas-consultadas, .titulo-novedades-usuario {
+    border-bottom: 2px var(--colorSeparadores) solid;
+}
+
+.novedad-estrecha {
+    border-bottom: 2px var(--colorSeparadores) solid;
+    padding: 5px 0px 5px 0px;
+}
+
+.contenedor-tarjetas {
+    margin: 20px 0px 30px 0px;
+    border-top: 2px var(--colorSeparadores) solid;
+    border-bottom: 2px var(--colorSeparadores) solid;
+}
+
+
+.tarjeta {
+    padding: 0px 12px 0px 12px;
+}
+
+.noticias-ocultas {
+    display: none;
+    margin-top: 20px;
+}
+
+.contenedor-noticias {
+    border-top: 2px var(--colorSeparadores) solid;
+    border-bottom: 2px var(--colorSeparadores) solid;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.boton-ver-mas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.boton-ver-mas-noticias{
+    background-color: transparent;
+    border: none;
+
+}
+
+.boton-ver-mas-noticias img{
+    width: 50px;
+    height: auto;
+}

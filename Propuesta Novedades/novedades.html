@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./compilacion/css/novedades_grid_header_index.css">
     <link rel="stylesheet" href="./compilacion/css/novedades_grid_main_index.css">
     <link rel="stylesheet" href="./compilacion/css/novedades_grid_footer_index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="contenido">
@@ -21,7 +22,7 @@
                     <div class="right-contenedor-titulo-header"></div>
                     <div class="contenedor-header">
                         <div class="grid-contenedor-header">
-                            <div class="titulo-header">
+                            <div class="titulo-header" id="logo-rj">
                                 <img src="./compilacion/images/logo_RedJurista.svg" alt="">
                             </div>
                             <div id="contenido-header-navegacion">
@@ -310,7 +311,9 @@
                             <img src="./compilacion/images/logo_RedJurista.svg" alt="">
                         </div>
                         <div class="tema-pop-up">
-                            <h5>Salud</h5>
+                            <div class="tema-salud">
+                                <h5>Salud</h5>
+                            </div>
                             <h5>Proyecto de Ley 312/2024</h5>
                         </div>
                         <div class="resumen-pop-up">
@@ -320,6 +323,14 @@
                             <p>
                                 El Gobierno Nacional de Colombia ha presentado un nuevo proyecto de ley de salud titulado "Hacia un sistema de salud garantista, universal, eficiente y solidario que privilegie la vida", con el objetivo de transformar el sistema de salud y asegurar acceso de calidad para todos los ciudadanos.
                             </p>
+                            <div class="calificacion-novedades">
+                                <button class="boton-like">
+                                    <img src="./compilacion/images/like-svgrepo-com.svg" alt="" id="boton-like">
+                                </button>
+                                <p>
+                                    53
+                                </p>
+                            </div>
                         </div>
                         <div class="mas-informacion-pop-up">
                             <button>
@@ -328,388 +339,887 @@
                         </div>
                     </div>
                 </div>
-                <div class="grid-body-contenido">
-                    <div class="left-contenedor-noticias-main"></div>
-                    <div class="right-contenedor-noticias-main"></div>
-                    <div class="contenedor-noticias-main">
-                        <div class="contenedor-noticias">
-                            <div class="contenedor-noticias-titulo">
-                                <h1>
-                                    Novedades
-                                </h1>
-                            </div>
-                            <div class="noticias-principales">
-                                <div class="grid-noticias-principales">
-                                    <div class="modulo1">
-                                        <div class="modulo-importante">
-                                            <a onclick="desplegarNoticia()">
-                                                <span>
-                                                   <!-- <img src="./compilacion/images/gold-medal-svgrepo-com.svg" alt="">-->
-                                                    <h5>
-                                                        Salud
-                                                    </h5>
-                                                    <div class="contenedor-titulo-modulo-importante">
-                                                        <div class="grid-contenedor-titulo-modulo-importante">
-                                                            <h2>
-                                                                Nueva Ley de Salud en Colombia: Garantizando el Derecho a la Salud para Todos
-                                                            </h2>
-                                                            <!-- <div class="icono-titulo-modulo-importante">
-                                                                <img src="./compilacion/images/health_11879685.png" alt="">
-                                                            </div> -->
-                                                        </div>
-                                                    </div>
-                                                    <h6>Proyecto de Ley 312/2024</h6>
-                                                </span>
-                                                <div class="resumen-noticia">
-                                                    <p>
-                                                        La Norma 824 revoluciona la gestión de residuos en ciudades, estableciendo directrices claras para minimizar el impacto ambiental y fomentar el reciclaje. Exige que hogares, comercios e industrias clasifiquen sus desechos en reciclables, orgánicos y no reciclables, optimizando así el proceso de reutilización. Además, impulsa el uso de tecnologías avanzadas y la creación de sistemas de recolección eficientes, mientras que las 
-    autoridades locales deben educar a la población sobre prácticas sostenibles. Con auditorías regulares a empresas de gestión de residuos y sanciones por incumplimiento, la Norma 824 busca reducir vertederos y promover una economía circular, protegiendo nuestro entorno urbano. ¡Un paso firme hacia un futuro más limpio y sostenible!
-                                                    </p>
-                                                </div>
-                                            </a>
-                                            <div class="boton-ver-mas">
-                                                <a onclick="desplegarNoticia()"><img src="./compilacion/images/plus-svgrepo-com.svg" alt=""><p>Ver mas</p></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="modulo2">
-                                        <div class="modulo-importante">
-                                            <div class="tarjeta-lateral-main">
-                                                <a onclick="desplegarNoticia()">
-                                                    <span>
-                                                        <h5>
-                                                            Salud
-                                                        </h5>
-                                                        <!--<img src="./compilacion/images/silver-medal-svgrepo-com.svg" alt="">-->
-                                                        <div class="contenedor-titulo-modulo-importante">
-                                                            <div class="grid-contenedor-titulo-modulo-importante">
-                                                                <h3>
-                                                                    Reforma Pensional 2025: Nuevas Normas para Jubilarse en Colombia
-                                                                </h3>
-                                                                <!-- <div class="icono-titulo-modulo-importante">
-                                                                    <img src="./compilacion/images/health_11879685.png" alt="">
-                                                                </div> -->
+                <div class="contenedor-body">
+                    <div class="grid-contenedor-body">
+                        <div class="left-contenedor-secciones"></div>
+                        <div class="right-contenedor-secciones"></div>
+                        <div class="contenedor-secciones">
+                            <div class="grid-contenedor-secciones">
+                                <div class="seccion-novedades">
+                                    <div class="grid-seccion-novedades">
+                                        <div class="contenedor-encabezado">
+                                            <div class="grid-contenedor-encabezado">
+                                                <div class="novedad-principal" onclick="desplegarNoticia()">
+                                                    <div class="informacion-novedad">
+                                                        <div class="tema">
+                                                            <div class="tema-pension">
+                                                                <h5>
+                                                                    Pension
+                                                                </h5>
                                                             </div>
                                                         </div>
-                                                        <h6>
-                                                            Proyecto de Ley 189/2024
-                                                        </h6>
-                                                    </span>
-                                                    <div class="resumen-noticia">
-                                                        <p>
-                                                            El Congreso de Colombia ha aprobado una reforma pensional que entrará en vigencia el 1 de julio de 2025. Esta reforma introduce cambios significativos en el sistema de pensiones, incluyendo ajustes en las semanas de cotización y nuevas condiciones para jubilarse.
-                                                        </p>
+                                                        <div class="fecha-hora">
+                                                            <h6>
+                                                                14:00 - 21/01/2025
+                                                            </h6>
+                                                        </div>
                                                     </div>
-                                                </a>
-                                                <div class="boton-ver-mas">
-                                                    <a onclick="desplegarNoticia()"><img src="./compilacion/images/plus-svgrepo-com.svg" alt=""><p>Ver mas</p></a>
+                                                    <div class="contenido-novedad">
+                                                        <div class="titulo-novedad">
+                                                            <h2>
+                                                                Reforma Pensional 2025: Nuevas Normas para Jubilarse en Colombia
+                                                            </h2>
+                                                            <div class="origen-novedad">
+                                                                <h5>
+                                                                    Proyecto de Ley 189/2024
+                                                                </h5>
+                                                            </div>
+                                                        </div>
+                                                        <div class="resumen-novedad">
+                                                            <p>
+                                                                El Congreso de Colombia ha aprobado una reforma pensional que entrará en vigencia el 1 de julio de 2025. Esta reforma introduce cambios significativos en el sistema de pensiones, incluyendo ajustes en las semanas de cotización y nuevas condiciones para jubilarse.
+                                                            </p>
+                                                        </div>
+                                                        <div class="calificacion-novedades">
+                                                            <img src="./compilacion/images/like-svgrepo-com.svg" alt="">
+                                                            <p>
+                                                                53
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="left-novedades-laterales">
+                                                    <div class="novedades-mas-consultadas">
+                                                        <div class="grid-novedades-mas-consultadas">
+                                                            <div class="titulo-novedades-mas-consultadas">
+                                                                <h2>
+                                                                    Novedades mas consultadas
+                                                                </h2>
+                                                            </div>
+                                                            <div class="contenedor-novedades-mas-consultadas">
+                                                                <div class="novedad-estrecha" onclick="desplegarNoticia()">
+                                                                    <div class="grid-novedad-estrecha">
+                                                                        <div class="tema">
+                                                                            <div class="tema-salud">
+                                                                                <h6>
+                                                                                    Salud
+                                                                                </h6>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="fecha-hora">
+                                                                            <h6>
+                                                                                17:00 - 21/01/2025
+                                                                            </h6>
+                                                                        </div>
+                                                                        <div class="titulo-novedad-estrecha">
+                                                                            <h5>
+                                                                                Nueva Ley de Salud en Colombia: Garantizando el Derecho a la Salud para Todos
+                                                                            </h5>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="novedad-estrecha" onclick="desplegarNoticia()">
+                                                                    <div class="grid-novedad-estrecha">
+                                                                        <div class="tema">
+                                                                            <div class="tema-salud">
+                                                                                <h6>
+                                                                                    Salud
+                                                                                </h6>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="fecha-hora">
+                                                                            <h6>
+                                                                                17:00 - 21/01/2025
+                                                                            </h6>
+                                                                        </div>
+                                                                        <div class="titulo-novedad-estrecha">
+                                                                            <h5>
+                                                                                Nueva Ley de Salud en Colombia: Garantizando el Derecho a la Salud para Todos
+                                                                            </h5>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="novedad-estrecha" onclick="desplegarNoticia()">
+                                                                    <div class="grid-novedad-estrecha">
+                                                                        <div class="tema">
+                                                                            <div class="tema-salud">
+                                                                                <h6>
+                                                                                    Salud
+                                                                                </h6>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="fecha-hora">
+                                                                            <h6>
+                                                                                17:00 - 21/01/2025
+                                                                            </h6>
+                                                                        </div>
+                                                                        <div class="titulo-novedad-estrecha">
+                                                                            <h5>
+                                                                                Nueva Ley de Salud en Colombia: Garantizando el Derecho a la Salud para Todos
+                                                                            </h5>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="right-novedades-laterales">
+                                                    <div class="novedades-usuario">
+                                                        <div class="grid-novedades-usuario">
+                                                            <div class="novedades-usuario">
+                                                                <div class="grid-novedades-usuario">
+                                                                    <div class="titulo-novedades-usuario">
+                                                                        <h2>
+                                                                            Novedades del usuario
+                                                                        </h2>
+                                                                    </div>
+                                                                    <div class="contenedor-novedades-usuario">
+                                                                        <div class="novedad-estrecha" onclick="desplegarNoticia()">
+                                                                            <div class="grid-novedad-estrecha">
+                                                                                <div class="tema">
+                                                                                    <div class="tema-salud">
+                                                                                        <h6>
+                                                                                            Salud
+                                                                                        </h6>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="fecha-hora">
+                                                                                    <h6>
+                                                                                        17:00 - 21/01/2025
+                                                                                    </h6>
+                                                                                </div>
+                                                                                <div class="titulo-novedad-estrecha">
+                                                                                    <h5>
+                                                                                        Nueva Ley de Salud en Colombia: Garantizando el Derecho a la Salud para Todos
+                                                                                    </h5>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                           <div class="novedad-estrecha" onclick="desplegarNoticia()">
+                                                                            <div class="grid-novedad-estrecha">
+                                                                                <div class="tema">
+                                                                                    <div class="tema-salud">
+                                                                                        <h6>
+                                                                                            Salud
+                                                                                        </h6>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="fecha-hora">
+                                                                                    <h6>
+                                                                                        17:00 - 21/01/2025
+                                                                                    </h6>
+                                                                                </div>
+                                                                                <div class="titulo-novedad-estrecha">
+                                                                                    <h5>
+                                                                                        Nueva Ley de Salud en Colombia: Garantizando el Derecho a la Salud para Todos
+                                                                                    </h5>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                           <div class="novedad-estrecha" onclick="desplegarNoticia()">
+                                                                            <div class="grid-novedad-estrecha">
+                                                                                <div class="tema">
+                                                                                    <div class="tema-salud">
+                                                                                        <h6>
+                                                                                            Salud
+                                                                                        </h6>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="fecha-hora">
+                                                                                    <h6>
+                                                                                        17:00 - 21/01/2025
+                                                                                    </h6>
+                                                                                </div>
+                                                                                <div class="titulo-novedad-estrecha">
+                                                                                    <h5>
+                                                                                        Nueva Ley de Salud en Colombia: Garantizando el Derecho a la Salud para Todos
+                                                                                    </h5>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="modulo3">
-                                        <div class="modulo-importante">
-                                            <a onclick="desplegarNoticia()">
-                                                <span>
-                                                    <h5>
-                                                        Salud
-                                                    </h5>
-                                                <!--<img src="./compilacion/images/bronze-medal-svgrepo-com.svg" alt="">-->
-                                                    <div class="contenedor-titulo-modulo-importante">
-                                                        <div class="grid-contenedor-titulo-modulo-importante">
+                                        <div class="mejores-valorados">
+                                            <div class="contenedor-tarjetas">
+                                                <h2>
+                                                    Mejores valorados
+                                                </h2>
+                                                <div class="grid-contenedor-tarjetas">
+                                                    <div class="tarjeta" onclick="desplegarNoticia()">
+                                                        <div class="informacion-novedad">
+                                                            <div class="tema">
+                                                                <div class="tema-pension">
+                                                                    <h5>
+                                                                        Pension
+                                                                    </h5>
+                                                                </div>
+                                                            </div>
+                                                            <div class="fecha-hora">
+                                                                <h6>
+                                                                    14:00 - 21/01/2025
+                                                                </h6>
+                                                            </div>
+                                                        </div>
+                                                        <div class="origen-novedad">
+                                                            <h6>
+                                                                Proyecto de Ley 189/2024
+                                                            </h6>
+                                                        </div>
+                                                        <div class="titulo-tarjeta">
                                                             <h4>
                                                                 Ley de Protección Ambiental 2025: Hacia un Futuro Sostenible en Colombia
                                                             </h4>
-                                                            <!-- <div class="icono-titulo-modulo-importante">
-                                                                <img src="./compilacion/images/green-earth.png" alt="">
-                                                            </div> -->
+                                                        </div>
+                                                        <div class="calificacion-novedades">
+                                                            <img src="./compilacion/images/like-svgrepo-com.svg" alt="">
+                                                            <p>
+                                                                53
+                                                            </p>
                                                         </div>
                                                     </div>
-                                                    <h6>
-                                                        Proyecto de Ley 205/2024
-                                                    </h6>
-                                                </span>
-                                                <div class="resumen-noticia">
-                                                    <p>
-                                                        El Congreso de Colombia ha aprobado una nueva ley de protección ambiental que busca reducir la huella de carbono del país y promover el uso de energías renovables. La ley entrará en vigencia el 15 de septiembre de 2025.
-                                                    </p>
-                                                </div>
-                                            </a>
-                                            <div class="boton-ver-mas">
-                                                <a onclick="desplegarNoticia()"><img src="./compilacion/images/plus-svgrepo-com.svg" alt=""><p>Ver mas</p></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="modulo4">
-                                        <div class="modulo-importante">
-                                            <a onclick="desplegarNoticia()">
-                                                <span>
-                                                    <h5>
-                                                        Salud
-                                                    </h5>
-                                                    <!--<img src="./compilacion/images/fire-svgrepo-com.svg" alt="">-->
-                                                    <div class="contenedor-titulo-modulo-importante">
-                                                        <div class="grid-contenedor-titulo-modulo-importante">
-                                                            <h5>
-                                                                Ley de Educación Inclusiva 2025: Garantizando el Acceso a la Educación para Todos
-                                                            </h5>
-                                                            <div class="icono-titulo-modulo-importante">
-                                                                <p>
-                                                                    13:00 - 21/01/2025
-                                                                </p>
+                                                    <div class="tarjeta" onclick="desplegarNoticia()">
+                                                        <div class="informacion-novedad">
+                                                            <div class="tema">
+                                                                <div class="tema-pension">
+                                                                    <h5>
+                                                                        Pension
+                                                                    </h5>
+                                                                </div>
+                                                            </div>
+                                                            <div class="fecha-hora">
+                                                                <h6>
+                                                                    14:00 - 21/01/2025
+                                                                </h6>
                                                             </div>
                                                         </div>
-                                                    </div>
-                                                    <h6>
-                                                        Proyecto de Ley 250/2024
-                                                    </h6>
-                                                </span>
-                                                <div class="resumen-noticia">
-                                                    <p>
-                                                        El Congreso de Colombia ha aprobado una nueva ley de educación inclusiva para asegurar que todos los niños y jóvenes, independientemente de sus capacidades o condiciones, tengan acceso a una educación de calidad. La ley entrará en vigencia el 1 de octubre de 2025.
-                                                    </p>
-                                                </div>
-                                                <div class="boton-ver-mas">
-                                                    <a onclick="desplegarNoticia()"><img src="./compilacion/images/plus-svgrepo-com.svg" alt=""><p>Ver mas</p></a>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="modulo5">
-                                        <div class="modulo-importante">
-                                            <a onclick="desplegarNoticia()">
-                                                <span>
-                                                    <h5>
-                                                        Salud
-                                                    </h5>
-                                                    <!--<img src="./compilacion/images/fire-svgrepo-com.svg" alt="">-->
-                                                    <div class="contenedor-titulo-modulo-importante">
-                                                        <div class="grid-contenedor-titulo-modulo-importante">
-                                                            <h5>
-                                                                Ley de Transporte Sostenible 2025: Movilidad Ecológica para un Futuro Verde
-                                                            </h5>
-                                                            <!-- <div class="icono-titulo-modulo-importante">
-                                                                <img src="./compilacion/images/health_11879685.png" alt="">
-                                                            </div> -->
-                                                            <div class="icono-titulo-modulo-importante">
-                                                                <p>
-                                                                    13:00 - 21/01/2025
-                                                                </p>
-                                                            </div>
+                                                        <div class="origen-novedad">
+                                                            <h6>
+                                                                Proyecto de Ley 189/2024
+                                                            </h6>
+                                                        </div>
+                                                        <div class="titulo-tarjeta">
+                                                            <h4>
+                                                                Ley de Protección Ambiental 2025: Hacia un Futuro Sostenible en Colombia
+                                                            </h4>
+                                                        </div>
+                                                        <div class="calificacion-novedades">
+                                                            <img src="./compilacion/images/like-svgrepo-com.svg" alt="">
+                                                            <p>
+                                                                53
+                                                            </p>
                                                         </div>
                                                     </div>
-                                                    <h6>
-                                                        Proyecto de Ley 320/2024
-                                                    </h6>
-                                                </span>
-                                                <div class="resumen-noticia">
-                                                    <p>
-                                                        El Congreso de Colombia ha aprobado una nueva ley de transporte sostenible que promueve el uso de vehículos eléctricos y mejora la infraestructura para bicicletas y peatones. La ley entrará en vigencia el 1 de noviembre de 2025.
-                                                    </p>
+                                                    <div class="tarjeta" onclick="desplegarNoticia()">
+                                                        <div class="informacion-novedad">
+                                                            <div class="tema">
+                                                                <div class="tema-pension">
+                                                                    <h5>
+                                                                        Pension
+                                                                    </h5>
+                                                                </div>
+                                                            </div>
+                                                            <div class="fecha-hora">
+                                                                <h6>
+                                                                    14:00 - 21/01/2025
+                                                                </h6>
+                                                            </div>
+                                                        </div>
+                                                        <div class="origen-novedad">
+                                                            <h6>
+                                                                Proyecto de Ley 189/2024
+                                                            </h6>
+                                                        </div>
+                                                        <div class="titulo-tarjeta">
+                                                            <h4>
+                                                                Ley de Protección Ambiental 2025: Hacia un Futuro Sostenible en Colombia
+                                                            </h4>
+                                                        </div>
+                                                        <div class="calificacion-novedades">
+                                                            <img src="./compilacion/images/like-svgrepo-com.svg" alt="">
+                                                            <p>
+                                                                53
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tarjeta" onclick="desplegarNoticia()">
+                                                        <div class="informacion-novedad">
+                                                            <div class="tema">
+                                                                <div class="tema-pension">
+                                                                    <h5>
+                                                                        Pension
+                                                                    </h5>
+                                                                </div>
+                                                            </div>
+                                                            <div class="fecha-hora">
+                                                                <h6>
+                                                                    14:00 - 21/01/2025
+                                                                </h6>
+                                                            </div>
+                                                        </div>
+                                                        <div class="origen-novedad">
+                                                            <h6>
+                                                                Proyecto de Ley 189/2024
+                                                            </h6>
+                                                        </div>
+                                                        <div class="titulo-tarjeta">
+                                                            <h4>
+                                                                Ley de Protección Ambiental 2025: Hacia un Futuro Sostenible en Colombia
+                                                            </h4>
+                                                        </div>
+                                                        <div class="calificacion-novedades">
+                                                            <img src="./compilacion/images/like-svgrepo-com.svg" alt="">
+                                                            <p>
+                                                                53
+                                                            </p>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                            </a>
-                                            <div class="boton-ver-mas">
-                                                <a onclick="desplegarNoticia()"><img src="./compilacion/images/plus-svgrepo-com.svg" alt=""><p>Ver mas</p></a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="noticias-secundarias">
-                                <div class="grid-noticias-secundarias">
-                                    <div onclick="desplegarNoticia()" class="modulo">
-                                        <div class="tema">
-                                            <h3>
-                                                Salud
-                                            </h3>
-                                        </div>
-                                        <p>15:00 21/01/2025</p>
-                                        <h4>
-                                            Ley de Protección de Datos Personales 2025: Resguardando la Privacidad de los Ciudadanos Colombianos
-                                        </h4>
-                                        <div class="boton-ver-mas">
-                                            <a ><img src="./compilacion/images/plus-svgrepo-com.svg" alt=""><p>Ver mas</p></a>
-                                        </div>
-                                    </div>
-                                    <div onclick="desplegarNoticia()" class="modulo">
-                                        <div class="tema">
-                                            <h3>
-                                                Salud
-                                            </h3>
-                                        </div>
-                                        <p>15:00 21/01/2025</p>
-                                        <h4>
-                                            Ley de Protección de Datos Personales 2025: Resguardando la Privacidad de los Ciudadanos Colombianos
-                                        </h4>
-                                        <div class="boton-ver-mas">
-                                            <a ><img src="./compilacion/images/plus-svgrepo-com.svg" alt=""><p>Ver mas</p></a>
-                                        </div>
-                                    </div>
-                                    <div onclick="desplegarNoticia()" class="modulo">
-                                        <div class="tema">
-                                            <h3>
-                                                Salud
-                                            </h3>
-                                        </div>
-                                        <p>15:00 21/01/2025</p>
-                                        <h4>
-                                            Ley de Protección de Datos Personales 2025: Resguardando la Privacidad de los Ciudadanos Colombianos
-                                        </h4>
-                                        <div class="boton-ver-mas">
-                                            <a ><img src="./compilacion/images/plus-svgrepo-com.svg" alt=""><p>Ver mas</p></a>
-                                        </div>
-                                    </div>
-                                    <div onclick="desplegarNoticia()" class="modulo">
-                                        <div class="tema">
-                                            <h3>
-                                                Salud
-                                            </h3>
-                                        </div>
-                                        <p>15:00 21/01/2025</p>
-                                        <h4>
-                                            Ley de Protección de Datos Personales 2025: Resguardando la Privacidad de los Ciudadanos Colombianos
-                                        </h4>
-                                        <div class="boton-ver-mas">
-                                            <a ><img src="./compilacion/images/plus-svgrepo-com.svg" alt=""><p>Ver mas</p></a>
-                                        </div>
-                                    </div>
-                                    <div onclick="desplegarNoticia()" class="modulo">
-                                        <div class="tema">
-                                            <h3>
-                                                Salud
-                                            </h3>
-                                        </div>
-                                        <p>15:00 21/01/2025</p>
-                                        <h4>
-                                            Ley de Protección de Datos Personales 2025: Resguardando la Privacidad de los Ciudadanos Colombianos
-                                        </h4>
-                                        <div class="boton-ver-mas">
-                                            <a ><img src="./compilacion/images/plus-svgrepo-com.svg" alt=""><p>Ver mas</p></a>
-                                        </div>
-                                    </div>
-                                    <div onclick="desplegarNoticia()" class="modulo">
-                                        <div class="tema">
-                                            <h3>
-                                                Salud
-                                            </h3>
-                                        </div>
-                                        <p>15:00 21/01/2025</p>
-                                        <h4>
-                                            Ley de Protección de Datos Personales 2025: Resguardando la Privacidad de los Ciudadanos Colombianos
-                                        </h4>
-                                        <div class="boton-ver-mas">
-                                            <a ><img src="./compilacion/images/plus-svgrepo-com.svg" alt=""><p>Ver mas</p></a>
-                                        </div>
-                                    </div>
-                                    <div onclick="desplegarNoticia()" class="modulo">
-                                        <div class="tema">
-                                            <h3>
-                                                Salud
-                                            </h3>
-                                        </div>
-                                        <p>15:00 21/01/2025</p>
-                                        <h4>
-                                            Ley de Protección de Datos Personales 2025: Resguardando la Privacidad de los Ciudadanos Colombianos
-                                        </h4>
-                                        <div class="boton-ver-mas">
-                                            <a ><img src="./compilacion/images/plus-svgrepo-com.svg" alt=""><p>Ver mas</p></a>
-                                        </div>
-                                    </div>
-                                    <div onclick="desplegarNoticia()" class="modulo">
-                                        <div class="tema">
-                                            <h3>
-                                                Salud
-                                            </h3>
-                                        </div>
-                                        <p>15:00 21/01/2025</p>
-                                        <h4>
-                                            Ley de Protección de Datos Personales 2025: Resguardando la Privacidad de los Ciudadanos Colombianos
-                                        </h4>
-                                        <div class="boton-ver-mas">
-                                            <a ><img src="./compilacion/images/plus-svgrepo-com.svg" alt=""><p>Ver mas</p></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="apartado-mas-noticias" id="apartado-mas-noticias">
-                                    <div class="contenedor-mas-noticias" id="contenedor-mas-noticias">
-                                        <div class="grid-noticias-secundarias">
-                                            <div onclick="desplegarNoticia()" class="modulo">
-                                                <h4>
-                                                    Ley de Protección de Datos Personales 2025: Resguardando la Privacidad de los Ciudadanos Colombianos
-                                                </h4>
-                                                <div class="boton-ver-mas">
-                                                    <a ><img src="./compilacion/images/plus-svgrepo-com.svg" alt=""><p>Ver mas</p></a>
+                                <div class="franja-noticias">
+                                    <div class="grid-franja-noticias">
+                                        <div class="contenedor-tarjetas-noticia">
+                                            <div class="contenedor-noticias">
+                                                <div class="noticias-visibles">
+                                                    <div class="grid-contenedor-tarjetas-noticia">
+                                                        <div class="tarjeta-noticia" onclick="desplegarNoticia()">
+                                                            <div class="informacion-novedad">
+                                                                <div class="tema">
+                                                                    <div class="tema-pension">
+                                                                        <h5>
+                                                                            Pension
+                                                                        </h5>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="fecha-hora">
+                                                                    <h6>
+                                                                        14:00 - 21/01/2025
+                                                                    </h6>
+                                                                </div>
+                                                            </div>
+                                                            <div class="origen-novedad">
+                                                                <h6>
+                                                                    Proyecto de Ley 189/2024
+                                                                </h6>
+                                                            </div>
+                                                            <div class="titulo-tarjeta">
+                                                                <h4>
+                                                                    Ley de Protección Ambiental 2025: Hacia un Futuro Sostenible en Colombia
+                                                                </h4>
+                                                            </div>
+                                                            <div class="calificacion-novedades">
+                                                                <img src="./compilacion/images/like-svgrepo-com.svg" alt="">
+                                                                <p>
+                                                                    53
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tarjeta-noticia" onclick="desplegarNoticia()">
+                                                            <div class="informacion-novedad">
+                                                                <div class="tema">
+                                                                    <div class="tema-pension">
+                                                                        <h5>
+                                                                            Pension
+                                                                        </h5>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="fecha-hora">
+                                                                    <h6>
+                                                                        14:00 - 21/01/2025
+                                                                    </h6>
+                                                                </div>
+                                                            </div>
+                                                            <div class="origen-novedad">
+                                                                <h6>
+                                                                    Proyecto de Ley 189/2024
+                                                                </h6>
+                                                            </div>
+                                                            <div class="titulo-tarjeta">
+                                                                <h4>
+                                                                    Ley de Protección Ambiental 2025: Hacia un Futuro Sostenible en Colombia
+                                                                </h4>
+                                                            </div>
+                                                            <div class="calificacion-novedades">
+                                                                <img src="./compilacion/images/like-svgrepo-com.svg" alt="">
+                                                                <p>
+                                                                    53
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tarjeta-noticia" onclick="desplegarNoticia()">
+                                                            <div class="informacion-novedad">
+                                                                <div class="tema">
+                                                                    <div class="tema-pension">
+                                                                        <h5>
+                                                                            Pension
+                                                                        </h5>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="fecha-hora">
+                                                                    <h6>
+                                                                        14:00 - 21/01/2025
+                                                                    </h6>
+                                                                </div>
+                                                            </div>
+                                                            <div class="origen-novedad">
+                                                                <h6>
+                                                                    Proyecto de Ley 189/2024
+                                                                </h6>
+                                                            </div>
+                                                            <div class="titulo-tarjeta">
+                                                                <h4>
+                                                                    Ley de Protección Ambiental 2025: Hacia un Futuro Sostenible en Colombia
+                                                                </h4>
+                                                            </div>
+                                                            <div class="calificacion-novedades">
+                                                                <img src="./compilacion/images/like-svgrepo-com.svg" alt="">
+                                                                <p>
+                                                                    53
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tarjeta-noticia" onclick="desplegarNoticia()">
+                                                            <div class="informacion-novedad">
+                                                                <div class="tema">
+                                                                    <div class="tema-pension">
+                                                                        <h5>
+                                                                            Pension
+                                                                        </h5>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="fecha-hora">
+                                                                    <h6>
+                                                                        14:00 - 21/01/2025
+                                                                    </h6>
+                                                                </div>
+                                                            </div>
+                                                            <div class="origen-novedad">
+                                                                <h6>
+                                                                    Proyecto de Ley 189/2024
+                                                                </h6>
+                                                            </div>
+                                                            <div class="titulo-tarjeta">
+                                                                <h4>
+                                                                    Ley de Protección Ambiental 2025: Hacia un Futuro Sostenible en Colombia
+                                                                </h4>
+                                                            </div>
+                                                            <div class="calificacion-novedades">
+                                                                <img src="./compilacion/images/like-svgrepo-com.svg" alt="">
+                                                                <p>
+                                                                    53
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tarjeta-noticia" onclick="desplegarNoticia()">
+                                                            <div class="informacion-novedad">
+                                                                <div class="tema">
+                                                                    <div class="tema-pension">
+                                                                        <h5>
+                                                                            Pension
+                                                                        </h5>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="fecha-hora">
+                                                                    <h6>
+                                                                        14:00 - 21/01/2025
+                                                                    </h6>
+                                                                </div>
+                                                            </div>
+                                                            <div class="origen-novedad">
+                                                                <h6>
+                                                                    Proyecto de Ley 189/2024
+                                                                </h6>
+                                                            </div>
+                                                            <div class="titulo-tarjeta">
+                                                                <h4>
+                                                                    Ley de Protección Ambiental 2025: Hacia un Futuro Sostenible en Colombia
+                                                                </h4>
+                                                            </div>
+                                                            <div class="calificacion-novedades">
+                                                                <img src="./compilacion/images/like-svgrepo-com.svg" alt="">
+                                                                <p>
+                                                                    53
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tarjeta-noticia" onclick="desplegarNoticia()">
+                                                            <div class="informacion-novedad">
+                                                                <div class="tema">
+                                                                    <div class="tema-pension">
+                                                                        <h5>
+                                                                            Pension
+                                                                        </h5>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="fecha-hora">
+                                                                    <h6>
+                                                                        14:00 - 21/01/2025
+                                                                    </h6>
+                                                                </div>
+                                                            </div>
+                                                            <div class="origen-novedad">
+                                                                <h6>
+                                                                    Proyecto de Ley 189/2024
+                                                                </h6>
+                                                            </div>
+                                                            <div class="titulo-tarjeta">
+                                                                <h4>
+                                                                    Ley de Protección Ambiental 2025: Hacia un Futuro Sostenible en Colombia
+                                                                </h4>
+                                                            </div>
+                                                            <div class="calificacion-novedades">
+                                                                <img src="./compilacion/images/like-svgrepo-com.svg" alt="">
+                                                                <p>
+                                                                    53
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tarjeta-noticia" onclick="desplegarNoticia()">
+                                                            <div class="informacion-novedad">
+                                                                <div class="tema">
+                                                                    <div class="tema-pension">
+                                                                        <h5>
+                                                                            Pension
+                                                                        </h5>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="fecha-hora">
+                                                                    <h6>
+                                                                        14:00 - 21/01/2025
+                                                                    </h6>
+                                                                </div>
+                                                            </div>
+                                                            <div class="origen-novedad">
+                                                                <h6>
+                                                                    Proyecto de Ley 189/2024
+                                                                </h6>
+                                                            </div>
+                                                            <div class="titulo-tarjeta">
+                                                                <h4>
+                                                                    Ley de Protección Ambiental 2025: Hacia un Futuro Sostenible en Colombia
+                                                                </h4>
+                                                            </div>
+                                                            <div class="calificacion-novedades">
+                                                                <img src="./compilacion/images/like-svgrepo-com.svg" alt="">
+                                                                <p>
+                                                                    53
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tarjeta-noticia" onclick="desplegarNoticia()">
+                                                            <div class="informacion-novedad">
+                                                                <div class="tema">
+                                                                    <div class="tema-pension">
+                                                                        <h5>
+                                                                            Pension
+                                                                        </h5>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="fecha-hora">
+                                                                    <h6>
+                                                                        14:00 - 21/01/2025
+                                                                    </h6>
+                                                                </div>
+                                                            </div>
+                                                            <div class="origen-novedad">
+                                                                <h6>
+                                                                    Proyecto de Ley 189/2024
+                                                                </h6>
+                                                            </div>
+                                                            <div class="titulo-tarjeta">
+                                                                <h4>
+                                                                    Ley de Protección Ambiental 2025: Hacia un Futuro Sostenible en Colombia
+                                                                </h4>
+                                                            </div>
+                                                            <div class="calificacion-novedades">
+                                                                <img src="./compilacion/images/like-svgrepo-com.svg" alt="">
+                                                                <p>
+                                                                    53
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="noticias-ocultas" id="contenedor-noticias-ocultas">
+                                                    <div class="grid-contenedor-tarjetas-noticia">
+                                                        <div class="tarjeta-noticia" onclick="desplegarNoticia()">
+                                                            <div class="informacion-novedad">
+                                                                <div class="tema">
+                                                                    <div class="tema-pension">
+                                                                        <h5>
+                                                                            Pension
+                                                                        </h5>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="fecha-hora">
+                                                                    <h6>
+                                                                        14:00 - 21/01/2025
+                                                                    </h6>
+                                                                </div>
+                                                            </div>
+                                                            <div class="origen-novedad">
+                                                                <h6>
+                                                                    Proyecto de Ley 189/2024
+                                                                </h6>
+                                                            </div>
+                                                            <div class="titulo-tarjeta">
+                                                                <h4>
+                                                                    Ley de Protección Ambiental 2025: Hacia un Futuro Sostenible en Colombia
+                                                                </h4>
+                                                            </div>
+                                                            <div class="calificacion-novedades">
+                                                                <img src="./compilacion/images/like-svgrepo-com.svg" alt="">
+                                                                <p>
+                                                                    53
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tarjeta-noticia" onclick="desplegarNoticia()">
+                                                            <div class="informacion-novedad">
+                                                                <div class="tema">
+                                                                    <div class="tema-pension">
+                                                                        <h5>
+                                                                            Pension
+                                                                        </h5>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="fecha-hora">
+                                                                    <h6>
+                                                                        14:00 - 21/01/2025
+                                                                    </h6>
+                                                                </div>
+                                                            </div>
+                                                            <div class="origen-novedad">
+                                                                <h6>
+                                                                    Proyecto de Ley 189/2024
+                                                                </h6>
+                                                            </div>
+                                                            <div class="titulo-tarjeta">
+                                                                <h4>
+                                                                    Ley de Protección Ambiental 2025: Hacia un Futuro Sostenible en Colombia
+                                                                </h4>
+                                                            </div>
+                                                            <div class="calificacion-novedades">
+                                                                <img src="./compilacion/images/like-svgrepo-com.svg" alt="">
+                                                                <p>
+                                                                    53
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tarjeta-noticia" onclick="desplegarNoticia()">
+                                                            <div class="informacion-novedad">
+                                                                <div class="tema">
+                                                                    <div class="tema-pension">
+                                                                        <h5>
+                                                                            Pension
+                                                                        </h5>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="fecha-hora">
+                                                                    <h6>
+                                                                        14:00 - 21/01/2025
+                                                                    </h6>
+                                                                </div>
+                                                            </div>
+                                                            <div class="origen-novedad">
+                                                                <h6>
+                                                                    Proyecto de Ley 189/2024
+                                                                </h6>
+                                                            </div>
+                                                            <div class="titulo-tarjeta">
+                                                                <h4>
+                                                                    Ley de Protección Ambiental 2025: Hacia un Futuro Sostenible en Colombia
+                                                                </h4>
+                                                            </div>
+                                                            <div class="calificacion-novedades">
+                                                                <img src="./compilacion/images/like-svgrepo-com.svg" alt="">
+                                                                <p>
+                                                                    53
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tarjeta-noticia" onclick="desplegarNoticia()">
+                                                            <div class="informacion-novedad">
+                                                                <div class="tema">
+                                                                    <div class="tema-pension">
+                                                                        <h5>
+                                                                            Pension
+                                                                        </h5>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="fecha-hora">
+                                                                    <h6>
+                                                                        14:00 - 21/01/2025
+                                                                    </h6>
+                                                                </div>
+                                                            </div>
+                                                            <div class="origen-novedad">
+                                                                <h6>
+                                                                    Proyecto de Ley 189/2024
+                                                                </h6>
+                                                            </div>
+                                                            <div class="titulo-tarjeta">
+                                                                <h4>
+                                                                    Ley de Protección Ambiental 2025: Hacia un Futuro Sostenible en Colombia
+                                                                </h4>
+                                                            </div>
+                                                            <div class="calificacion-novedades">
+                                                                <img src="./compilacion/images/like-svgrepo-com.svg" alt="">
+                                                                <p>
+                                                                    53
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tarjeta-noticia" onclick="desplegarNoticia()">
+                                                            <div class="informacion-novedad">
+                                                                <div class="tema">
+                                                                    <div class="tema-pension">
+                                                                        <h5>
+                                                                            Pension
+                                                                        </h5>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="fecha-hora">
+                                                                    <h6>
+                                                                        14:00 - 21/01/2025
+                                                                    </h6>
+                                                                </div>
+                                                            </div>
+                                                            <div class="origen-novedad">
+                                                                <h6>
+                                                                    Proyecto de Ley 189/2024
+                                                                </h6>
+                                                            </div>
+                                                            <div class="titulo-tarjeta">
+                                                                <h4>
+                                                                    Ley de Protección Ambiental 2025: Hacia un Futuro Sostenible en Colombia
+                                                                </h4>
+                                                            </div>
+                                                            <div class="calificacion-novedades">
+                                                                <img src="./compilacion/images/like-svgrepo-com.svg" alt="">
+                                                                <p>
+                                                                    53
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tarjeta-noticia" onclick="desplegarNoticia()">
+                                                            <div class="informacion-novedad">
+                                                                <div class="tema">
+                                                                    <div class="tema-pension">
+                                                                        <h5>
+                                                                            Pension
+                                                                        </h5>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="fecha-hora">
+                                                                    <h6>
+                                                                        14:00 - 21/01/2025
+                                                                    </h6>
+                                                                </div>
+                                                            </div>
+                                                            <div class="origen-novedad">
+                                                                <h6>
+                                                                    Proyecto de Ley 189/2024
+                                                                </h6>
+                                                            </div>
+                                                            <div class="titulo-tarjeta">
+                                                                <h4>
+                                                                    Ley de Protección Ambiental 2025: Hacia un Futuro Sostenible en Colombia
+                                                                </h4>
+                                                            </div>
+                                                            <div class="calificacion-novedades">
+                                                                <img src="./compilacion/images/like-svgrepo-com.svg" alt="">
+                                                                <p>
+                                                                    53
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tarjeta-noticia" onclick="desplegarNoticia()">
+                                                            <div class="informacion-novedad">
+                                                                <div class="tema">
+                                                                    <div class="tema-pension">
+                                                                        <h5>
+                                                                            Pension
+                                                                        </h5>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="fecha-hora">
+                                                                    <h6>
+                                                                        14:00 - 21/01/2025
+                                                                    </h6>
+                                                                </div>
+                                                            </div>
+                                                            <div class="origen-novedad">
+                                                                <h6>
+                                                                    Proyecto de Ley 189/2024
+                                                                </h6>
+                                                            </div>
+                                                            <div class="titulo-tarjeta">
+                                                                <h4>
+                                                                    Ley de Protección Ambiental 2025: Hacia un Futuro Sostenible en Colombia
+                                                                </h4>
+                                                            </div>
+                                                            <div class="calificacion-novedades">
+                                                                <img src="./compilacion/images/like-svgrepo-com.svg" alt="">
+                                                                <p>
+                                                                    53
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tarjeta-noticia" onclick="desplegarNoticia()">
+                                                            <div class="informacion-novedad">
+                                                                <div class="tema">
+                                                                    <div class="tema-pension">
+                                                                        <h5>
+                                                                            Pension
+                                                                        </h5>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="fecha-hora">
+                                                                    <h6>
+                                                                        14:00 - 21/01/2025
+                                                                    </h6>
+                                                                </div>
+                                                            </div>
+                                                            <div class="origen-novedad">
+                                                                <h6>
+                                                                    Proyecto de Ley 189/2024
+                                                                </h6>
+                                                            </div>
+                                                            <div class="titulo-tarjeta">
+                                                                <h4>
+                                                                    Ley de Protección Ambiental 2025: Hacia un Futuro Sostenible en Colombia
+                                                                </h4>
+                                                            </div>
+                                                            <div class="calificacion-novedades">
+                                                                <img src="./compilacion/images/like-svgrepo-com.svg" alt="">
+                                                                <p>
+                                                                    53
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
-                                            <div onclick="desplegarNoticia()" class="modulo">
-                                                <h4>
-                                                    Ley de Protección de Datos Personales 2025: Resguardando la Privacidad de los Ciudadanos Colombianos
-                                                </h4>
-                                                <div class="boton-ver-mas">
-                                                    <a ><img src="./compilacion/images/plus-svgrepo-com.svg" alt=""><p>Ver mas</p></a>
-                                                </div>
-                                            </div>
-                                            <div onclick="desplegarNoticia()" class="modulo">
-                                                <h4>
-                                                    Ley de Protección de Datos Personales 2025: Resguardando la Privacidad de los Ciudadanos Colombianos
-                                                </h4>
-                                                <div class="boton-ver-mas">
-                                                    <a ><img src="./compilacion/images/plus-svgrepo-com.svg" alt=""><p>Ver mas</p></a>
-                                                </div>
-                                            </div>
-                                            <div onclick="desplegarNoticia()" class="modulo">
-                                                <h4>
-                                                    Ley de Protección de Datos Personales 2025: Resguardando la Privacidad de los Ciudadanos Colombianos
-                                                </h4>
-                                                <div class="boton-ver-mas">
-                                                    <a ><img src="./compilacion/images/plus-svgrepo-com.svg" alt=""><p>Ver mas</p></a>
-                                                </div>
-                                            </div>
-                                            <div onclick="desplegarNoticia()" class="modulo">
-                                                <h4>
-                                                    Ley de Protección de Datos Personales 2025: Resguardando la Privacidad de los Ciudadanos Colombianos
-                                                </h4>
-                                                <div class="boton-ver-mas">
-                                                    <a ><img src="./compilacion/images/plus-svgrepo-com.svg" alt=""><p>Ver mas</p></a>
-                                                </div>
-                                            </div>
-                                            <div onclick="desplegarNoticia()" class="modulo">
-                                                <h4>
-                                                    Ley de Protección de Datos Personales 2025: Resguardando la Privacidad de los Ciudadanos Colombianos
-                                                </h4>
-                                                <div class="boton-ver-mas">
-                                                    <a ><img src="./compilacion/images/plus-svgrepo-com.svg" alt=""><p>Ver mas</p></a>
-                                                </div>
-                                            </div>
-                                            <div onclick="desplegarNoticia()" class="modulo">
-                                                <h4>
-                                                    Ley de Protección de Datos Personales 2025: Resguardando la Privacidad de los Ciudadanos Colombianos
-                                                </h4>
-                                                <div class="boton-ver-mas">
-                                                    <a ><img src="./compilacion/images/plus-svgrepo-com.svg" alt=""><p>Ver mas</p></a>
-                                                </div>
-                                            </div>
-                                            <div onclick="desplegarNoticia()" class="modulo">
-                                                <h4>
-                                                    Ley de Protección de Datos Personales 2025: Resguardando la Privacidad de los Ciudadanos Colombianos
-                                                </h4>
-                                                <div class="boton-ver-mas">
-                                                    <a><img src="./compilacion/images/plus-svgrepo-com.svg" alt=""><p>Ver mas</p></a>
-                                                </div>
+                                            <div class="boton-ver-mas">
+                                                <button onclick="desplegarMasNoticias()" class="boton-ver-mas-noticias">
+                                                    <img src="./compilacion/images/down-arrow-svgrepo-com.svg" alt="" id="flecha-ver-mas">
+                                                </button>
                                             </div>
                                         </div>
+                                        <div class="left-contenedor-publicidad">
+
+                                        </div>
                                     </div>
-                                    <div class="ver-mas-noticias" id="ver-mas-noticias">
-                                        <h4>
-                                            ¡Eso es todo por hoy!
-                                        </h4>
-                                        <button>
-                                            <h2>
-                                                ¿Quieres ver las noticias de ayer?
-                                            </h2>
-                                        </button>
-                                    </div>
-                                    <img onclick="desplegarMasNoticias()" src="./compilacion/images/down-arrow-svgrepo-com.svg" alt="">
                                 </div>
                             </div>
                         </div>
@@ -766,5 +1276,6 @@
     <script type="text/javascript" src="./compilacion/js/novedades_popup_noticia.js"></script>
     <script type="text/javascript" src="./compilacion/js/novedades_mas_noticias.js"></script>
     <script type="text/javascript" src="./compilacion/js/novedades_dropdown.js"></script>
+    <script type="text/javascript" src="./compilacion/js/novedades_funcion_like.js"></script>
 </body>
 </html>
