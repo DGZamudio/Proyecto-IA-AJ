@@ -38,6 +38,7 @@ body {
 }
 
 .titulo-novedades-mas-consultadas, .titulo-novedades-usuario {
+    min-height: 65px;
     color:var(--colorTextoResaltado);
 }
 
@@ -61,13 +62,9 @@ body {
     border-bottom:  1px var(--colorSeparadores) solid;
 }
 
-.titulo-novedades-mas-consultadas, .titulo-novedades-usuario {
-    border-bottom: 2px var(--colorSeparadores) solid;
-}
-
 .novedad-estrecha {
     cursor: pointer;
-    border-bottom: 2px var(--colorSeparadores) solid;
+    border-top: 2px var(--colorSeparadores) solid;
     padding: 5px 0px 5px 0px;
 }
 
@@ -380,6 +377,69 @@ option {
     background-color: var(--colorBackgroundBoton2);
     color: var(--colorTextoFuente2);
     cursor: pointer;
+}
+
+.pop-up-suscribirse {
+    z-index: 1000;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 40%;
+    background-color: var(--colorBackgroundBody);
+    border: 2px var(--colorBordeBlanco) solid;
+    border-radius: 26px;
+    padding: 15px;
+}
+
+.opacidad {
+    display: none;
+    position: fixed;
+    top: 0;
+    opacity: 80%;
+    z-index: 3;
+    background-color: var(--colorBackgroundBody);
+    width: 100%;
+    height: 100%;
+}
+
+.cerrar-pop-up {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cerrar-pop-up img {
+    width: 1rem;
+    height: auto;
+}
+
+.titulo-suscribirse {
+    color: var(--colorTextoTitulos);
+}
+
+.texto-suscribirse {
+    margin: 15px 0px 15px 0px ;
+}
+
+.botones-suscribirse {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px;
+}
+
+.boton-adquirir-suscripcion button{
+    border-radius: 15px;
+    border: none;
+    padding:8px;
+    background-color: var(--colorBackgroundBoton);
+    margin-bottom: 8px;
+}
+
+.boton-ingresar-suscripcion {
+    color: var(--colorTextoFuente2);
 }
 
 p {

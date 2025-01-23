@@ -142,6 +142,7 @@ header {
 
 .boton-registarse-header p{
     color: var(--colorTextoFuente2);
+    text-decoration: none;
 }
 
 .buscador-ia-header {
@@ -180,7 +181,6 @@ header {
 }*/
 
 .buscador-ia-header textarea {
-    font-size: 1.1rem;
     padding: 10px;
     resize: none;
     width: 100%;
@@ -191,6 +191,18 @@ header {
     background-color: var(--colorBackgroundBusqueda);
     height: auto;
     outline: none;
+}
+
+@media screen and (min-width:400px){
+    .buscador-ia-header textarea {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width:400px){
+    .buscador-ia-header textarea {
+        font-size: 1rem;
+    }
 }
 
 /*.contenedor-buscador-ia-header:has(textarea:focus) {

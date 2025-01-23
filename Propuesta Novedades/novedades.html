@@ -25,7 +25,7 @@
                             <div class="titulo-header" id="logo-rj">
                                 <img src="./compilacion/images/logo_RedJurista.svg" alt="">
                             </div>
-                            <div id="contenido-header-navegacion">
+                            <!-- <div id="contenido-header-navegacion">
                                 <div class="contenedor-navegacion">
                                     <div class="dropdown-navegacion" id="hover">
                                         <button>
@@ -206,7 +206,8 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
+                            
                             <div class="botones-sesion-header">
                                 <div class="boton-ingresar-header">
                                     <a href="">
@@ -220,6 +221,12 @@
                                 </div>
                             </div>
                             <div id="calendario-header">
+                                <h6>
+                                    Fecha publicacion:
+                                </h6>
+                                <input type="date" value="2024-01-14" max="2024-01-15">
+                            </div>
+                            <!-- <div id="calendario-header">
                                 <h6>
                                     Fecha publicacion:
                                 </h6>
@@ -281,11 +288,11 @@
                                   <option value="2025">2025</option>
                                 </select>
                                 
-                            </div>
+                            </div> -->
                             <div class="buscador-ia-header">
                                 <div class="contenedor-buscador-ia-header">
-                                    <textarea id="chatInput" placeholder="Consulta con JuRIA..."></textarea>
-                                    <a href="">
+                                    <textarea id="chatInput" placeholder="Preguntale a Jur-IA sobre las novedades ..."></textarea>
+                                    <a href="JURIA">
                                         <img src="./compilacion/images/send.png" alt="">
                                     </a>
                                 </div>
@@ -296,6 +303,7 @@
             </div>
         </header>
         <main>
+            <div class="opacidad" id="opacidad"></div>
             <div class="body-contenido">
                 <div class="pop-up-noticia" id="pop-up">
                     <div class="grid-pop-up-noticia">
@@ -339,6 +347,34 @@
                         </div>
                     </div>
                 </div>
+                <div class="pop-up-suscribirse" id="pop-up-suscribirse">
+                    <div class="cerrar-pop-up">
+                        <img src="./compilacion/images/x-symbol-svgrepo-com.svg" alt="" onclick="desplegarSuscripcion()">
+                    </div>
+                    <div class="titulo-suscribirse">
+                        <h1>
+                            ¡Parece que no estas suscrito!
+                        </h1>
+                    </div>
+                    <div class="texto-suscribirse">
+                        <p>
+                            Si deseas acceder a este contenido necesitas tener una suscripcion activa
+                        </p>
+                    </div>
+                    <div class="botones-suscribirse">
+                        <div class="boton-adquirir-suscripcion">
+                            <button>
+                                <h3>Deseo adquirir una suscripcion</h3>
+                            </button>
+                        </div>
+                        <p>o</p>
+                        <div class="boton-ingresar-suscripcion">
+                            <a href="">
+                                <p>Iniciar sesion</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
                 <div class="contenedor-body">
                     <div class="grid-contenedor-body">
                         <div class="left-contenedor-secciones"></div>
@@ -352,10 +388,8 @@
                                                 <div class="novedad-principal" onclick="desplegarNoticia()">
                                                     <div class="informacion-novedad">
                                                         <div class="tema">
-                                                            <div class="tema-pension">
-                                                                <h5>
-                                                                    Pension
-                                                                </h5>
+                                                            <div class="tema-salud">
+                                                                <h5>Salud</h5>
                                                             </div>
                                                         </div>
                                                         <div class="fecha-hora">
@@ -421,10 +455,10 @@
                                                                 <div class="novedad-estrecha" onclick="desplegarNoticia()">
                                                                     <div class="grid-novedad-estrecha">
                                                                         <div class="tema">
-                                                                            <div class="tema-salud">
-                                                                                <h6>
-                                                                                    Salud
-                                                                                </h6>
+                                                                            <div class="tema-pension">
+                                                                                <h5>
+                                                                                    Pension
+                                                                                </h5>
                                                                             </div>
                                                                         </div>
                                                                         <div class="fecha-hora">
@@ -463,10 +497,10 @@
                                                                 <div class="novedad-estrecha" onclick="desplegarNoticia()">
                                                                     <div class="grid-novedad-estrecha">
                                                                         <div class="tema">
-                                                                            <div class="tema-salud">
-                                                                                <h6>
-                                                                                    Salud
-                                                                                </h6>
+                                                                            <div class="tema-pension">
+                                                                                <h5>
+                                                                                    Pension
+                                                                                </h5>
                                                                             </div>
                                                                         </div>
                                                                         <div class="fecha-hora">
@@ -562,9 +596,9 @@
                                                                         <div class="novedad-estrecha" onclick="desplegarNoticia()">
                                                                             <div class="grid-novedad-estrecha">
                                                                                 <div class="tema">
-                                                                                    <div class="tema-salud">
+                                                                                    <div class="tema-pension">
                                                                                         <h6>
-                                                                                            Salud
+                                                                                            Pension
                                                                                         </h6>
                                                                                     </div>
                                                                                 </div>
@@ -604,10 +638,10 @@
                                                            <div class="novedad-estrecha" onclick="desplegarNoticia()">
                                                                             <div class="grid-novedad-estrecha">
                                                                                 <div class="tema">
-                                                                                    <div class="tema-salud">
-                                                                                        <h6>
-                                                                                            Salud
-                                                                                        </h6>
+                                                                                    <div class="tema-pension">
+                                                                                        <h5>
+                                                                                            Pension
+                                                                                        </h5>
                                                                                     </div>
                                                                                 </div>
                                                                                 <div class="fecha-hora">
@@ -810,10 +844,8 @@
                                                         <div class="tarjeta-noticia" onclick="desplegarNoticia()">
                                                             <div class="informacion-novedad">
                                                                 <div class="tema">
-                                                                    <div class="tema-pension">
-                                                                        <h5>
-                                                                            Pension
-                                                                        </h5>
+                                                                    <div class="tema-salud">
+                                                                        <h5>Salud</h5>
                                                                     </div>
                                                                 </div>
                                                                 <div class="fecha-hora">
@@ -906,11 +938,9 @@
                                                         <div class="tarjeta-noticia" onclick="desplegarNoticia()">
                                                             <div class="informacion-novedad">
                                                                 <div class="tema">
-                                                                    <div class="tema-pension">
-                                                                        <h5>
-                                                                            Pension
-                                                                        </h5>
-                                                                    </div>
+                                                            <div class="tema-salud">
+                                                                <h5>Salud</h5>
+                                                            </div>
                                                                 </div>
                                                                 <div class="fecha-hora">
                                                                     <h6>
@@ -1038,11 +1068,71 @@
                                                         <div class="tarjeta-noticia" onclick="desplegarNoticia()">
                                                             <div class="informacion-novedad">
                                                                 <div class="tema">
+                                                            <div class="tema-salud">
+                                                                <h5>Salud</h5>
+                                                            </div>
+                                                                </div>
+                                                                <div class="fecha-hora">
+                                                                    <h6>
+                                                                        14:00 - 21/01/2025
+                                                                    </h6>
+                                                                </div>
+                                                            </div>
+                                                            <div class="origen-novedad">
+                                                                <h6>
+                                                                    Proyecto de Ley 189/2024
+                                                                </h6>
+                                                            </div>
+                                                            <div class="titulo-tarjeta">
+                                                                <h4>
+                                                                    Ley de Protección Ambiental 2025: Hacia un Futuro Sostenible en Colombia
+                                                                </h4>
+                                                            </div>
+                                                            <div class="calificacion-novedades">
+                                                                <img src="./compilacion/images/like-svgrepo-com.svg" alt="">
+                                                                <p>
+                                                                    53
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tarjeta-noticia" onclick="desplegarNoticia()">
+                                                            <div class="informacion-novedad">
+                                                                <div class="tema">
                                                                     <div class="tema-pension">
                                                                         <h5>
                                                                             Pension
                                                                         </h5>
                                                                     </div>
+                                                                </div>
+                                                                <div class="fecha-hora">
+                                                                    <h6>
+                                                                        14:00 - 21/01/2025
+                                                                    </h6>
+                                                                </div>
+                                                            </div>
+                                                            <div class="origen-novedad">
+                                                                <h6>
+                                                                    Proyecto de Ley 189/2024
+                                                                </h6>
+                                                            </div>
+                                                            <div class="titulo-tarjeta">
+                                                                <h4>
+                                                                    Ley de Protección Ambiental 2025: Hacia un Futuro Sostenible en Colombia
+                                                                </h4>
+                                                            </div>
+                                                            <div class="calificacion-novedades">
+                                                                <img src="./compilacion/images/like-svgrepo-com.svg" alt="">
+                                                                <p>
+                                                                    53
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tarjeta-noticia" onclick="desplegarNoticia()">
+                                                            <div class="informacion-novedad">
+                                                                <div class="tema">
+                                                            <div class="tema-salud">
+                                                                <h5>Salud</h5>
+                                                            </div>
                                                                 </div>
                                                                 <div class="fecha-hora">
                                                                     <h6>
@@ -1198,75 +1288,9 @@
                                                         <div class="tarjeta-noticia" onclick="desplegarNoticia()">
                                                             <div class="informacion-novedad">
                                                                 <div class="tema">
-                                                                    <div class="tema-pension">
-                                                                        <h5>
-                                                                            Pension
-                                                                        </h5>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="fecha-hora">
-                                                                    <h6>
-                                                                        14:00 - 21/01/2025
-                                                                    </h6>
-                                                                </div>
+                                                            <div class="tema-salud">
+                                                                <h5>Salud</h5>
                                                             </div>
-                                                            <div class="origen-novedad">
-                                                                <h6>
-                                                                    Proyecto de Ley 189/2024
-                                                                </h6>
-                                                            </div>
-                                                            <div class="titulo-tarjeta">
-                                                                <h4>
-                                                                    Ley de Protección Ambiental 2025: Hacia un Futuro Sostenible en Colombia
-                                                                </h4>
-                                                            </div>
-                                                            <div class="calificacion-novedades">
-                                                                <img src="./compilacion/images/like-svgrepo-com.svg" alt="">
-                                                                <p>
-                                                                    53
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                        <div class="tarjeta-noticia" onclick="desplegarNoticia()">
-                                                            <div class="informacion-novedad">
-                                                                <div class="tema">
-                                                                    <div class="tema-pension">
-                                                                        <h5>
-                                                                            Pension
-                                                                        </h5>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="fecha-hora">
-                                                                    <h6>
-                                                                        14:00 - 21/01/2025
-                                                                    </h6>
-                                                                </div>
-                                                            </div>
-                                                            <div class="origen-novedad">
-                                                                <h6>
-                                                                    Proyecto de Ley 189/2024
-                                                                </h6>
-                                                            </div>
-                                                            <div class="titulo-tarjeta">
-                                                                <h4>
-                                                                    Ley de Protección Ambiental 2025: Hacia un Futuro Sostenible en Colombia
-                                                                </h4>
-                                                            </div>
-                                                            <div class="calificacion-novedades">
-                                                                <img src="./compilacion/images/like-svgrepo-com.svg" alt="">
-                                                                <p>
-                                                                    53
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                        <div class="tarjeta-noticia" onclick="desplegarNoticia()">
-                                                            <div class="informacion-novedad">
-                                                                <div class="tema">
-                                                                    <div class="tema-pension">
-                                                                        <h5>
-                                                                            Pension
-                                                                        </h5>
-                                                                    </div>
                                                                 </div>
                                                                 <div class="fecha-hora">
                                                                     <h6>
@@ -1295,8 +1319,8 @@
                                                 </div>
                                             </div>
                                             <div class="boton-ver-mas">
-                                                <button onclick="desplegarMasNoticias()" class="boton-ver-mas-noticias">
-                                                    <img src="./compilacion/images/down-arrow-svgrepo-com.svg" alt="" id="flecha-ver-mas">
+                                                <button onclick="desplegarMasNoticias(), desplegarSuscripcion()" class="boton-ver-mas-noticias">
+                                                    <img src="./compilacion/images/down-arrow-svgrepo-com.svg" alt="Ver mas noticias" title="Ver mas noticias" id="flecha-ver-mas">
                                                 </button>
                                             </div>
                                         </div>
@@ -1361,5 +1385,6 @@
     <script type="text/javascript" src="./compilacion/js/novedades_mas_noticias.js"></script>
     <script type="text/javascript" src="./compilacion/js/novedades_dropdown.js"></script>
     <script type="text/javascript" src="./compilacion/js/novedades_funcion_like.js"></script>
+    <script type="text/javascript" src="./compilacion/js/novedades_popup_suscripcion.js"></script>
 </body>
 </html>
