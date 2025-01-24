@@ -37,8 +37,12 @@ body {
     color: var(--colorTextoTitulos3);
 }
 
+.novedades-usuario {
+    border-top: 2px var(--colorSeparadores) solid;
+}
+
 .novedades-usuario, .novedades-mas-consultadas {
-    border-left:2px var(--colorSeparadores) solid ;
+    border-left: 2px var(--colorSeparadores) solid;
 }
 
 .titulo-novedades-mas-consultadas, .titulo-novedades-usuario {
@@ -89,7 +93,6 @@ body {
 }
 
 .mejores-valorados {
-    border-top: 2px var(--colorSeparadores) solid;
     border-bottom: 2px var(--colorSeparadores) solid;
 }
 
@@ -402,7 +405,7 @@ option {
     position: fixed;
     top: 0;
     opacity: 80%;
-    z-index: 3;
+    z-index: 1;
     background-color: var(--colorBackgroundBody);
     width: 100%;
     height: 100%;

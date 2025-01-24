@@ -25,6 +25,10 @@
     display: grid;
 }
 
+.menu-hamburguesa {
+    grid-area: menu-hamburguesa;
+}
+
 .titulo-header {
     grid-area: titulo-header;
 }
@@ -39,7 +43,8 @@
 
 #calendario-header {
     grid-area: calendario-header;
-    justify-content: center;
+    justify-self: center;
+    align-self: center;
 }
 
 @media screen and (min-width:1200px) {
@@ -52,8 +57,11 @@
         grid-template-areas: 
             "titulo-header . botones-sesion-header"
             "contenido-header-navegacion contenido-header-navegacion contenido-header-navegacion"
-            "calendario-header calendario-header calendario-header"
+            ". calendario-header menu-hamburguesa"
             "buscador-ia-header buscador-ia-header buscador-ia-header"
+    }
+    .menu-hamburguesa {
+        justify-self: end;
     }
 }
 
@@ -67,8 +75,11 @@
         grid-template-areas: 
             "titulo-header botones-sesion-header"
             "contenido-header-navegacion contenido-header-navegacion"
-            "calendario-header calendario-header"
+            "calendario-header menu-hamburguesa"
             "buscador-ia-header buscador-ia-header";
+    }
+    .menu-hamburguesa {
+        justify-self: end;
     }
 }
     @media screen and (max-width:600px) {
@@ -79,11 +90,15 @@
             grid-template-columns: auto;
             grid-template-rows: auto;
             grid-template-areas: 
-                "titulo-header"
-                "botones-sesion-header"
-                "contenido-header-navegacion"
-                "calendario-header"
-                "buscador-ia-header";
+                "titulo-header menu-hamburguesa"
+                "botones-sesion-header botones-sesion-header"
+                "contenido-header-navegacion contenido-header-navegacion"
+                "calendario-header calendario-header"
+                "buscador-ia-header buscador-ia-header";
+        }
+        .menu-hamburguesa {
+            justify-self: center;
+            align-self: center;
         }
         .titulo-header {
             justify-self: center;

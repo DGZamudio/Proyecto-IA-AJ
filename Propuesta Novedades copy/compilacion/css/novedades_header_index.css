@@ -2,6 +2,17 @@ header {
     position: sticky;
 }
 
+.menu-lateral {
+    display: none;
+    z-index: 4;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 250px;
+    background-color: var(--colorBackgroundBody);
+}
+
 .contenedor-noticias-titulo {
     padding: 15px;
 }
@@ -15,6 +26,22 @@ header {
     color: var(--colorTextoTitulos);
 }
 
+.menu-hamburguesa img{
+    width: 40px;
+    height: auto;
+}
+
+.icono-cerrar-menu-lateral {
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px;
+}
+
+.icono-cerrar-menu-lateral img{
+    width: 35px;
+    height: auto;
+}
+
 .titulo-header {
     width: 195px;
     height: auto;
@@ -26,6 +53,7 @@ header {
     left: 0;
     width: 100%;
     background-color: var(--colorBackgroundBody);
+    border-right: 2px var(--colorBordeBlanco) solid;
   }
 
   .sticky-logo {
@@ -218,6 +246,7 @@ header {
 #calendario-header {
     display: flex;
     align-items: center;
+    justify-content: center;
     color: var(--colorTextoFuente);
 }
 
