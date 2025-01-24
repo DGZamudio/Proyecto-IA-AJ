@@ -1,0 +1,296 @@
+.grid-body-contenido {
+    display: grid;
+    grid-template-areas: 
+        "left-contenedor-noticias-main contenedor-noticias-main right-contenedor-noticias-main";
+    margin-top: 25px;
+}
+
+.contenedor-noticias-main {
+  grid-area: contenedor-noticias-main;  
+}
+
+.left-contenedor-noticias-main {
+    grid-area: left-contenedor-noticias-main;
+}
+.right-contenedor-noticias-main {
+    grid-area: right-contenedor-noticias-main;
+}
+
+.contenedor-noticias {
+    grid-area: contenedor-noticias;
+}
+
+
+
+.grid-noticias-principales {
+    display: grid;
+}
+
+.modulo1 {
+    grid-area: modulo1;
+}
+
+.modulo2 {
+    grid-area: modulo2;
+}
+
+.modulo3 {
+    grid-area: modulo3;
+}
+
+.modulo4 {
+    grid-area: modulo4;
+}
+
+.modulo5 {
+    grid-area: modulo5;
+}
+
+.grid-noticias-secundarias {
+    margin-top: 50px;
+    display: grid;
+    grid-template-rows: auto;
+    column-gap: 20px;
+    row-gap: 15px;
+}
+
+
+.grid-pop-up-noticia {
+    display: grid;
+    row-gap: 15px;
+}
+
+.boton-regresar-pop-up {
+    grid-area: boton-regresar-pop-up;
+}
+
+.titulo-pop-up {
+    grid-area: titulo-pop-up;
+}
+
+.logo-pop-up {
+    grid-area: logo-pop-up;
+}
+
+.tema-pop-up {
+    grid-area: tema-pop-up;
+}
+
+.resumen-pop-up {
+    grid-area: resumen-pop-up;
+}
+
+.mas-informacion-pop-up {
+    grid-area: mas-informacion-pop-up;
+}
+
+.grid-contenedor-titulo-modulo-importante {
+    display: grid;
+}
+
+@media screen and (min-width:1200px) {
+    .grid-contenedor-body {
+        grid-template-columns: 1fr 1200px 1fr;
+    }
+    .grid-contenedor-encabezado {
+        grid-template-columns: 3fr 1fr ;
+        grid-template-rows: 1fr ;
+        grid-template-areas: 
+            "novedad-principal3 novedades-mas-consultadas"
+            "novedad-principal2 novedades-usuario"
+            "novedad-principal1 mejores-valorados";
+    }
+    .grid-contenedor-tarjetas-noticia {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        row-gap: 20px;
+        column-gap: 15px;
+    }
+    .grid-contenedor-tarjetas {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .grid-pop-up-noticia {
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "boton-regresar-pop-up mas-informacion-pop-up"
+            "titulo-pop-up logo-pop-up"
+            "tema-pop-up ."
+            "resumen-pop-up resumen-pop-up";
+    }
+    .mas-informacion-pop-up {
+        justify-self: end;
+    }
+    .logo-pop-up {
+        justify-self: end;
+    }
+    .grid-contenedor-titulo-modulo-importante {
+        grid-template-columns: 14fr 1fr;
+    }
+    .icono-titulo-modulo-importante {
+        align-self: center;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .grid-contenedor-body {
+        grid-template-columns: 1fr 15fr 1fr;
+    }
+    .grid-contenedor-encabezado {
+        grid-template-columns: 3fr 1fr ;
+        grid-template-rows: 1fr ;
+        grid-template-areas: 
+            "novedad-principal3 novedades-mas-consultadas"
+            "novedad-principal2 novedades-usuario"
+            "novedad-principal1 mejores-valorados";
+    }
+    .grid-contenedor-tarjetas-noticia {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        row-gap: 20px;
+        column-gap: 15px;
+    }
+    .grid-contenedor-tarjetas {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .grid-pop-up-noticia {
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "boton-regresar-pop-up mas-informacion-pop-up"
+            "titulo-pop-up logo-pop-up"
+            "tema-pop-up ."
+            "resumen-pop-up resumen-pop-up";
+    }
+    .mas-informacion-pop-up {
+        justify-self: end;
+    }
+    .logo-pop-up {
+        justify-self: end;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .grid-contenedor-body {
+        display: grid;
+        grid-template-columns: 1fr 20fr 1fr;
+        grid-template-areas: 
+            "left-contenedor-secciones contenedor-secciones right-contenedor-secciones";
+    }
+    .grid-contenedor-encabezado {
+        grid-template-columns: 3fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    .grid-contenedor-tarjetas {
+        grid-template-columns: 1fr 1fr;
+    }
+    .grid-contenedor-tarjetas-noticia {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        row-gap: 20px;
+        column-gap: 15px;
+    }
+    .grid-pop-up-noticia {
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "boton-regresar-pop-up"
+            "logo-pop-up"
+            "titulo-pop-up"
+            "tema-pop-up"
+            "resumen-pop-up"
+            "mas-informacion-pop-up";
+    }
+    .mas-informacion-pop-up {
+        justify-self: center;
+    }
+    .logo-pop-up {
+        justify-self: center;
+    }
+}
+
+.grid-contenedor-body {
+    display: grid;
+    grid-template-areas: 
+        "left-contenedor-secciones contenedor-secciones right-contenedor-secciones";
+}
+
+.left-contenedor-secciones {
+    grid-area: left-contenedor-secciones;
+}
+
+.right-contenedor-secciones {
+    grid-area: right-contenedor-secciones;
+}
+
+.mejores-valorados {
+    grid-area: mejores-valorados;
+}
+
+.contenedor-secciones {
+    grid-area: contenedor-secciones;
+}
+
+.grid-contenedor-encabezado {
+    display: grid;
+}
+
+#novedad-principal3 {
+    grid-area: novedad-principal3;
+}
+
+#novedad-principal2 {
+    grid-area: novedad-principal2;
+}
+
+#novedad-principal1 {
+    grid-area: novedad-principal1;
+}
+
+.novedades-mas-consultadas {
+    grid-area: novedades-mas-consultadas;
+}
+
+.novedades-usuario {
+    grid-area: novedades-usuario;
+}
+
+
+.grid-novedades-mas-consultadas {
+    display: grid;
+
+}
+
+
+
+.grid-contenedor-tarjetas-noticia {
+    display: grid;
+}
+
+
+
+.grid-novedad-estrecha {
+    display: grid;
+    grid-template-areas: 
+        "tema origen-novedad"
+        "titulo-novedad-estrecha titulo-novedad-estrecha";
+}
+
+.tema {
+    grid-area: tema;
+}
+
+.origen-novedad {
+    grid-area: origen-novedad;
+}
+
+.titulo-novedad-estrecha {
+    grid-area: titulo-novedad-estrecha;
+}
+
+.grid-contenedor-tarjetas {
+    display: grid;
+}
