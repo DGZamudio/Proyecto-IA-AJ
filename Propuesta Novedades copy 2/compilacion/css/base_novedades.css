@@ -1,0 +1,40 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    --color--white1:#FFF;
+    --color--white2:#FCFCFC;
+    --color--gray1:#a8a8a8;
+    --color--gray2:#616161;
+    --color--black1:#000;
+    --color--black2:#181818;
+    --color--black3:#181818;
+    --color--blue1:#2796A8;
+    --color--green1:#C4E5DB;
+
+    --colorTextoTitulos:var(--color--black1);
+    --colorTextoTitulos2:var(--color--gray2);
+    --colorTextoTitulos3:var(--color--blue1);
+    --colorTextoFuente:var(--color--black1);
+    --colorTextoFuente1:var(--color--black2);
+    --colorTextoFuente2:var(--color--black1);
+    --colorTextoFuente3:var();
+    --colorTextoFuente4:var();
+    --colorSombraModulos:var();
+    --colorSombraBuscador:var();
+    --colorSombraMasNoticias:var();
+    --colorBackgroundBody:var(--color--white1);
+    --colorBackgroundBody2:var(--color--white2);
+    --colorBackgroundBoton:var(--color--green1);
+    --colorBackgroundBoton2:var();
+    --colorBackgroundModulos:var(--color--white1);
+    --colorBackgroundHeader:var();
+    --colorBackgroundBusqueda:var();
+    --colorBordeBlanco:var(--color--black2);
+    --colorTextoResaltado:var(--color--blue1);
+    --colorSeparadores:var(--color--gray1);
+    --colorSeparadores2:var(--color--green1);
+}

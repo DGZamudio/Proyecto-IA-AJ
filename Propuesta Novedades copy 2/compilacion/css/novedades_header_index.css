@@ -164,9 +164,9 @@ header {
     transition: all 400ms;
 }
 
-.boton-registarse-header:hover {
+/*.boton-registarse-header:hover {
     background-color: var(--colorBackgroundBoton2);
-}
+}*/
 
 .boton-registarse-header p{
     color: var(--colorTextoFuente2);
@@ -194,7 +194,7 @@ header {
     width: 80%;
     transition: all 500ms;
     border-radius: 20px;
-    border: 2px var(--colorSeparadores) solid;
+    border: 2px var(--colorSeparadores2) solid;
     background-color: var(--colorBackgroundBusqueda);
 }
 
@@ -255,7 +255,6 @@ header {
     background-color: transparent;
     border: none;
     color: var(--colorTextoFuente);
-    color-scheme: dark;
 }
 
 #calendario-header input:focus {

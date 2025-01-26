@@ -1,5 +1,5 @@
 body {
-    background-image: linear-gradient(var(--colorBackgroundBody) 55%, #000);
+    background-color: var(--colorBackgroundBody);
     scrollbar-width: thin;
 }
 
@@ -34,7 +34,7 @@ body {
 }
 
 #contenedor-novedad-principal1 {
-    border-right: 2px var(--colorSeparadores) solid;
+    border-right: 1px var(--colorSeparadores) solid;
 }
 
 .titulo-tarjeta {
@@ -80,7 +80,7 @@ body {
 
 .novedad-estrecha {
     cursor: pointer;
-    border-top: 2px var(--colorSeparadores) solid;
+    border-top: 1px var(--colorSeparadores) solid;
     padding: 5px 0px 5px 0px;
 }
 
@@ -100,10 +100,6 @@ body {
     margin-top: 20px;
 }
 
-.mejores-valorados {
-    border-bottom: 2px var(--colorSeparadores) solid;
-}
-
 .noticias-ocultas {
     display: none;
     margin-top: 20px;
@@ -115,8 +111,8 @@ body {
 }
 
 .contenedor-noticias {
-    border-top: 2px var(--colorSeparadores) solid;
-    border-bottom: 2px var(--colorSeparadores) solid;
+    border-top: 1px var(--colorSeparadores) solid;
+    border-bottom: 1px var(--colorSeparadores) solid;
     padding-top: 15px;
     padding-bottom: 10px;
 }
@@ -150,7 +146,6 @@ body {
 
 .contenedor-secciones {
     margin-top: 25px;
-    border-top: 2px var(--colorSeparadores) solid;
     border-bottom: 2px var(--colorSeparadores) solid;
     border-radius: 26px 26px 0px 0px;
 }
@@ -277,7 +272,6 @@ option {
     position: fixed;
     border-radius: 1rem;
     background-color: var(--colorBackgroundModulos);
-    border: 3px var(--colorSeparadores) solid;
 }
 
 .modulo {
@@ -335,7 +329,7 @@ option {
     width: 60%;
     min-width: 280px;
     height: 60%;
-    background-image: linear-gradient(45deg,var(--colorBackgroundModulos),black);
+    background-color: var(--colorBackgroundModulos);
     top: 0;
     margin: 50px;
     border-radius: 50px;

@@ -1,0 +1,112 @@
+.grid-header-contenido {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "left-contenedor-titulo-header contenedor-header right-contenedor-titulo-header";
+}
+
+.contenedor-header {
+    grid-area: contenedor-header;
+}
+
+.botones-sesion-header {
+    grid-area: botones-sesion-header;
+}
+
+.left-contenedor-titulo-header {
+    grid-area: left-contenedor-titulo-header;
+}
+
+.right-contenedor-titulo-header {
+    grid-area: right-contenedor-titulo-header;
+}
+
+.grid-contenedor-header {
+    display: grid;
+}
+
+.menu-hamburguesa {
+    grid-area: menu-hamburguesa;
+}
+
+.titulo-header {
+    grid-area: titulo-header;
+}
+
+#contenido-header-navegacion {
+    grid-area: contenido-header-navegacion;
+}
+
+.buscador-ia-header {
+    grid-area:buscador-ia-header;
+}
+
+#calendario-header {
+    grid-area: calendario-header;
+    justify-self: center;
+    align-self: center;
+}
+
+@media screen and (min-width:1200px) {
+    .grid-header-contenido {
+        grid-template-columns: 1fr 1200px 1fr;
+    }
+    .grid-contenedor-header {
+        grid-template-columns: 5fr 11fr 4fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "titulo-header . botones-sesion-header"
+            "contenido-header-navegacion contenido-header-navegacion contenido-header-navegacion"
+            ". calendario-header menu-hamburguesa"
+            "buscador-ia-header buscador-ia-header buscador-ia-header"
+    }
+    .menu-hamburguesa {
+        justify-self: end;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .grid-header-contenido {
+        grid-template-columns: 1fr 15fr 1fr;
+    }
+    .grid-contenedor-header {
+        grid-template-columns: 5fr 4fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "titulo-header botones-sesion-header"
+            "contenido-header-navegacion contenido-header-navegacion"
+            "calendario-header menu-hamburguesa"
+            "buscador-ia-header buscador-ia-header";
+    }
+    .menu-hamburguesa {
+        justify-self: end;
+    }
+}
+    @media screen and (max-width:600px) {
+        .grid-header-contenido {
+            grid-template-columns: 1fr 20fr 1fr;
+        }
+        .grid-contenedor-header {
+            grid-template-columns: auto;
+            grid-template-rows: auto;
+            grid-template-areas: 
+                "titulo-header menu-hamburguesa"
+                "botones-sesion-header botones-sesion-header"
+                "contenido-header-navegacion contenido-header-navegacion"
+                "calendario-header calendario-header"
+                "buscador-ia-header buscador-ia-header";
+        }
+        .menu-hamburguesa {
+            justify-self: center;
+            align-self: center;
+        }
+        .titulo-header {
+            justify-self: center;
+        }
+        #contenido-header-navegacion button{
+            font-size:.8em;
+        }
+        #contenido-header-navegacion button:hover{
+            font-size:1em;
+        }
+}
