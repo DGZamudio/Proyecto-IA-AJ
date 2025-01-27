@@ -1,0 +1,112 @@
+.grid-header-contenido {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "left-contenedor-titulo-header contenedor-header right-contenedor-titulo-header";
+}
+
+.contenedor-header {
+    grid-area: contenedor-header;
+}
+
+.botones-sesion-header {
+    grid-area: botones-sesion-header;
+}
+
+.left-contenedor-titulo-header {
+    grid-area: left-contenedor-titulo-header;
+}
+
+.right-contenedor-titulo-header {
+    grid-area: right-contenedor-titulo-header;
+}
+
+.grid-contenedor-header {
+    display: grid;
+}
+
+.titulo-header {
+    grid-area: titulo-header;
+}
+
+.contenedor-header-navegacion {
+    grid-area: contenido-header-navegacion;
+}
+
+.buscador-ia-header {
+    grid-area:buscador-ia-header;
+    justify-self: end;
+}
+
+.titulo-novedades {
+    grid-area: titulo-novedades;
+}
+
+#calendario-header {
+    grid-area: calendario-header;
+    justify-self: start;
+    align-self: center;
+}
+
+.navegacion-red-jurista {
+    grid-area: navegacion-red-jurista;
+}
+
+.titulo-novedades {
+    grid-area: titulo-novedades;
+    align-self: center;
+}
+
+@media screen and (min-width:1200px) {
+    .grid-header-contenido {
+        grid-template-columns: 1fr 1200px 1fr;
+    }
+    .grid-contenedor-header {
+        grid-template-columns: 5fr 11fr 5fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "titulo-header navegacion-red-jurista botones-sesion-header"
+            "titulo-novedades buscador-ia-header buscador-ia-header"
+            "contenido-header-navegacion contenido-header-navegacion contenido-header-navegacion"
+            "calendario-header calendario-header ."
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .grid-header-contenido {
+        grid-template-columns: 1fr 15fr 1fr;
+    }
+    .grid-contenedor-header {
+        grid-template-columns: 5fr 5fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "titulo-header botones-sesion-header"
+            "contenido-header-navegacion contenido-header-navegacion"
+            "calendario-header ."
+            "buscador-ia-header buscador-ia-header";
+    }
+}
+    @media screen and (max-width:600px) {
+        .grid-header-contenido {
+            grid-template-columns: 1fr 20fr 1fr;
+        }
+        .grid-contenedor-header {
+            grid-template-columns: auto;
+            grid-template-rows: auto;
+            grid-template-areas: 
+                "titulo-header ."
+                "botones-sesion-header botones-sesion-header"
+                "contenido-header-navegacion contenido-header-navegacion"
+                "calendario-header calendario-header"
+                "buscador-ia-header buscador-ia-header";
+        }
+        .titulo-header {
+            justify-self: center;
+        }
+        #contenido-header-navegacion button{
+            font-size:.8em;
+        }
+        #contenido-header-navegacion button:hover{
+            font-size:1em;
+        }
+}

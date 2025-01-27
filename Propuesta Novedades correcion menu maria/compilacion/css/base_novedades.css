@@ -1,0 +1,88 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    /*colores tema blanco*/
+    --color--white1:#FFF;
+    --color--white2:#FCFCFC;
+    --color--white3:#c9c9c9;
+    --color--gray1:#a8a8a8;
+    --color--gray2:#616161;
+    --color--black1:#000;
+    --color--black2:#181818;
+    --color--black3:#181818;
+    --color--blue1:#2796A8;
+    --color--green1:#C4E5DB;
+
+    --colorTextoTitulos:var(--color--black1);
+    --colorTextoTitulos2:var(--color--gray2);
+    --colorTextoTitulos3:var(--color--blue1);
+    --colorTextoFuente:var(--color--black1);
+    --colorTextoFuente1:var(--color--black2);
+    --colorTextoFuente2:var(--color--black1);
+    --colorTextoFuente3:var();
+    --colorTextoFuente4:var();
+    --colorSombraModulos:var();
+    --colorSombraBuscador:var();
+    --colorSombraMasNoticias:var();
+    --colorBackgroundBody:var(--color--white1);
+    --colorBackgroundBody2:var(--color--white2);
+    --colorBackgroundBoton:var(--color--green1);
+    --colorBackgroundBoton2:var(--color--white3);
+    --colorBackgroundModulos:var(--color--white1);
+    --colorBackgroundHeader:var();
+    --colorBackgroundBusqueda:var();
+    --colorBordeBlanco:var(--color--black2);
+    --colorTextoResaltado:var(--color--blue1);
+    --colorSeparadores:var(--color--gray1);
+    --colorSeparadores2:var(--color--green1);
+
+    /*colores tema azul*/
+
+/*     
+    --color--black1:#000;
+    --color--black2:#272727;
+    --color--gray1:#868686;
+    --color--gray2:#999999;
+    --color--gray3:#d1d1d1;
+    --color--white1:#FFF;
+    --color--white2:#f1f1f1;
+    --color--white3:#b4acac;
+    --color--white4:#d3cccc;
+    --color--white5:#ffffffa4;
+    --color--blue1:#0b1526;
+    --color--blue2:#14233C;
+    --color--blue3:#144d6465;
+    --color--blue4:#64a1f1;
+    --color--blue5:#144d64d2;
+    --color--blue6:#102A3A;
+    --color--blue7:#0F4C75;
+    --color--green:#c4e5db;
+
+    --colorTextoTitulos:var(--color--white1);
+    --colorTextoTitulos2:var(--color--gray2);
+    --colorTextoTitulos3:var(--color--green);
+    --colorTextoFuente:var(--color--white4);
+    --colorTextoFuente1:var(--color--gray3);
+    --colorTextoFuente2:var(--color--black1);
+    --colorTextoFuente3:var(--color--gray1);
+    --colorTextoFuente4:var(--color--white3);
+    --colorSombraModulos:var(--color--blue5);
+    --colorSombraBuscador:var(--color--white1);
+    --colorSombraMasNoticias:var(--color--white5);
+    --colorBackgroundBody:var(--color--blue1);
+    --colorBackgroundBody2:var(--color--blue6);
+    --colorBackgroundBoton:var(--color--green);
+    --colorBackgroundBoton2:var(--color--white1);
+    --colorBackgroundModulos:var(--color--blue2);
+    --colorBackgroundHeader:var(--color--black2);
+    --colorBackgroundBusqueda:var(--color--white2);
+    --colorBordeBlanco:var(--color--white1);
+    --colorTextoResaltado:var(--color--white2);
+    --colorSeparadores:var(--color--blue3);
+    --colorSeparadores2:var(--color--blue7);
+    */
+}
